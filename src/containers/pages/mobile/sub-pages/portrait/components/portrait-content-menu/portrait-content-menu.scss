@@ -1,1 +1,41 @@
-.PortraitContentMenu {}
+.PortraitContentMenu {
+  padding: 10px 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-grow: 1;
+
+  &__Section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &.first {
+      justify-content: flex-start;
+      .ButtonWithIcon {
+        margin-bottom: 10px;
+      }
+    }
+
+    &.second {
+      .ButtonWithIcon {
+        margin-bottom: 10px;
+      }
+    }
+
+    &.third {
+      justify-content: flex-end;
+      .ButtonWithIcon {
+        margin-top: 10px;
+      }
+    }
+  }
+}

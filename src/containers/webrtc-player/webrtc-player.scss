@@ -1,0 +1,22 @@
+@import "~bootstrap/scss/functions";
+@import "../../assets/scss/utilities/variables";
+@import "~bootstrap/scss/mixins/breakpoints";
+@import "../../assets/scss/utilities/functions";
+
+.WebrtcPlayer {
+  width: 100%;
+  height: $videoHeight;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  #webrtc-player {
+    width: 100%;
+    height: $videoHeight;
+    max-height: 100vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+  }
+}

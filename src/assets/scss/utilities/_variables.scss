@@ -1,0 +1,81 @@
+// Variables Custom
+:root {
+    --main-background: linear-gradient(360deg, #19836E 0.09%, #1B8E70 100%), radial-gradient(214.77% 100% at 50% 100%, #2E734E 0%, #171228 100%), #000000;
+    --main-chips-anton-regular: "Anton", Roboto, Ubuntu, "Fira Sans", system-ui, -apple-system, sans-serif;
+    --portrait-round-panel-height: 36px;
+    --mobile-width: 360px;
+    --mobile-height: 640px;
+    --mobile-portrait-bet-rate: 0.61271;
+    --mobile-portrait-bet-rate-sm: 0.58;
+    --mobile-portrait-bet-width: 360px;
+    --mobile-portrait-bet-height: 640px;
+    --timer-length: 10;
+    --timer-width: 100;
+}
+
+// Bootstrap
+$font-family-sans-serif: 'Inter', Roboto, Ubuntu, system-ui, -apple-system, sans-serif;
+
+$theme-colors: (
+        "purple": #a046f9,
+        "orange": #ffb74c,
+        "yellow": #fbdc01,
+        "red": #ff4c4c,
+        "green": #4cff9f,
+        "green-secondary": #1b8e70,
+        "info": #2dcaec,
+        "primary": #96ffff,
+        "success": #1f917a,
+        "success-secondary": rgba(55, 230, 135, 0.16),
+        "danger": #ec502d,
+        "table-orange": #ba976d,
+        "table-green": #438c65,
+        "table-red": #b56d56,
+        "table-purple": #79489f,
+        "table-beige": #dcb08d,
+        "table-blue": #4f6c98,
+        "ui-white": #ffffff,
+        "ui-purple": #57218c,
+        "ui-lighter": rgba(255, 255, 255, 0.08),
+        "ui-lighter-hard": rgba(255, 255, 255, 0.24),
+        "ui-darker": rgba(0, 0, 0, 0.24),
+        "ui-darker-hard": rgba(0, 0, 0, 0.72),
+        "chips-orange-main": #f0ac27,
+        "chips-orange-light": #ffb930,
+        "chips-orange-dark": #e29d18,
+        "chips-red-main": #e14d2d,
+        "chips-red-light": #f3512e,
+        "chips-red-dark": #c64529,
+        "chips-green-main": #29d984,
+        "chips-green-light": #27f190,
+        "chips-green-dark": #1eb16a,
+        "chips-blue-main": #339ae5,
+        "chips-blue-light": #47acf6,
+        "chips-blue-dark": #26bfdc,
+        "chips-purple-main": #a84de4,
+        "chips-purple-light": #c267fa,
+        "chips-purple-dark": #9a3ad4,
+        "chips-white-main": #f3f3f3,
+        "chips-white-light": #ffffff,
+        "chips-white-dark": #d0d0d0,
+        "chips-shadow": rgba(0, 0, 0, 0.08),
+        "card-black": #1c3151,
+        "card-red": #ef1515,
+        "button-green-main": #4cff9f,
+        "button-black-main": #17101d
+);
+
+$grid-breakpoints: (
+        xs: 0,
+        ss: 360px,
+        sm: 576px,
+        md: 812px,
+        lg: 992px,
+        xl: 1280px,
+        hd: 1440px,
+        hdf: 1920px
+);
+
+$ratioValue: 1.77777;
+$videoHeight: 100vw / $ratioValue;
+

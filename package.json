@@ -1,0 +1,49 @@
+{
+  "name": "roulette",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@microsoft/signalr": "^5.0.11",
+    "@reduxjs/toolkit": "^1.5.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "bootstrap": "^4.6.0",
+    "classnames": "^2.3.1",
+    "enum": "^3.0.4",
+    "lodash": "^4.17.21",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-device-detect": "^2.1.2",
+    "react-dom": "^17.0.2",
+    "react-global-configuration": "^1.4.1",
+    "react-mobile-fullscreen": "^1.0.1",
+    "react-redux": "^7.2.3",
+    "react-router-dom": "^5.3.0",
+    "react-scripts": "4.0.3",
+    "reactstrap": "^9.0.0",
+    "sass": "^1.43.4",
+    "use-orientation-change": "^1.0.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

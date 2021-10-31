@@ -1,0 +1,3 @@
+@function responseCalc($size) {
+  @return calc(#{$size} * var(--responsive-key));
+}

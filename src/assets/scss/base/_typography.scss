@@ -1,0 +1,28 @@
+@import "../utilities/mixins";
+
+/* Inter */
+@include font-face-light('Inter', '../../fonts/Inter-ExtraLight', $style: normal, $weight: 100);
+@include font-face-light('Inter', '../../fonts/Inter-Light', $style: normal, $weight: 200);
+@include font-face-light('Inter', '../../fonts/Inter-Regular', $style: normal, $weight: 300);
+@include font-face-light('Inter', '../../fonts/Inter-SemiBold', $style: normal, $weight: 500);
+@include font-face-light('Inter', '../../fonts/Inter-Bold', $style: normal, $weight: 600);
+@include font-face-light('Inter', '../../fonts/Inter-Bold', $style: normal, $weight: bold);
+@include font-face-light('Inter', '../../fonts/Inter-LightItalic-BETA', $style: italic, $weight: 200);
+@include font-face-light('Inter', '../../fonts/Inter-Light', $style: italic, $weight: 300);
+@include font-face-light('Inter', '../../fonts/Inter-SemiBoldItalic', $style: italic, $weight: 500);
+@include font-face-light('Inter', '../../fonts/Inter-BoldItalic', $style: italic, $weight: 600);
+@include font-face-light('Inter', '../../fonts/Inter-ExtraBold', $style: italic, $weight: bold);
+
+/* Intro Head */
+
+@include font-face-light('Intro HeadR Base', '../../fonts/IntroHeadR-Base', $style: normal, $weight: bold);
+@include font-face-light('Intro Base 2 Line', '../../fonts/IntroRustG-Base2Line', $style: normal, $weight: bold);
+@include font-face-light('Intro Script Base', '../../fonts/IntroScriptR-H2Base', $style: normal, $weight: bold);
+
+/* Palatino */
+
+@include font-face-light('Palatino', '../../fonts/Palatino-Bold', $style: normal, $weight: bold);
+@include font-face-light('Palatino', '../../fonts/Palatino-BoldItalic', $style: italic, $weight: bold);
+
+/* Anton */
+@include font-face-light('Anton', '../../fonts/Anton-Regular', $style: normal, $weight: bold);

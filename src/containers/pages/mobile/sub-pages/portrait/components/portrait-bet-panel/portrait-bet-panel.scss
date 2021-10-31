@@ -1,0 +1,116 @@
+.PortraitBetPanel {
+  padding: 8px;
+  width: 100%;
+  height: 100%;
+
+  .small {
+    font-size: 10px !important;
+  }
+
+  .phoneBettingGridWrapper .red_color {
+    fill: #de2201;
+  }
+  .phoneBettingGridWrapper .red_color.highlighted {
+    fill: rgba(237,137,120,1);
+  }
+  .phoneBettingGridWrapper .black_color {
+    fill: #1a1a1a;
+  }
+  .phoneBettingGridWrapper .black_color.highlighted {
+    fill: rgba(133,133,133,1);
+  }
+  .phoneBettingGridWrapper .green_color {
+    fill: #149d2a;
+  }
+  .phoneBettingGridWrapper .green_color.highlighted {
+    fill: rgba(130,203,141,1);
+  }
+  .phoneBettingGridWrapper .outsides_color {
+    fill: rgba(0,0,0,0);
+  }
+  .phoneBettingGridWrapper .outsides_color.highlighted {
+    fill: rgba(119,119,119,0.47);
+  }
+  .phoneBettingGridWrapper .color-none {
+    fill: white;
+    opacity: 0;
+  }
+  .phoneBettingGridWrapper .red_diamond_color {
+    pointer-events: none;
+    stroke: #FFF9E3;
+    stroke-width: 0.75;
+    fill: #DE2201;
+  }
+  .phoneBettingGridWrapper .black_diamond_color {
+    pointer-events: none;
+    stroke: #FFF9E3;
+    stroke-width: 0.75;
+    fill: #1A1A1A;
+  }
+
+  .phoneBettingGridWrapper .red_color_label,
+  .phoneBettingGridWrapper .black_color_label,
+  .phoneBettingGridWrapper .green_color_label,
+  .phoneBettingGridWrapper .called_bets_label,
+  .phoneBettingGridWrapper .outsides_color_label,
+  .phoneBettingGridWrapper .outside_small_color_label {
+    pointer-events: none;
+    font-weight: 400;
+    font-family: Inter, Arial;
+    text-anchor: middle;
+  }
+  .phoneBettingGridWrapper .vertical_center {
+    dominant-baseline: central;
+  }
+  .phoneBettingGridWrapper .outside_color_label {
+    pointer-events: none;
+    font-weight: 400;
+    font-family: Inter, Arial;
+    text-anchor: middle;
+  }
+  .phoneBettingGridWrapper .red_color_label {
+    fill: #E5E5E5;
+  }
+  .phoneBettingGridWrapper .black_color_label {
+    fill: #f2f2f2;
+  }
+  .phoneBettingGridWrapper .green_color_label {
+    fill: #f2f2f2;
+  }
+  .phoneBettingGridWrapper .called_bets_label {
+    fill: #f2f2f2;
+  }
+  .phoneBettingGridWrapper .outsides_color_label,
+  .phoneBettingGridWrapper .outside_color_label {
+    fill: #f2f2f2;
+  }
+  .phoneBettingGridWrapper .outside_small_color_label,
+  .phoneBettingGridWrapper .outside_color_label .small {
+    fill: #f2f2f2;
+  }
+
+  .phoneBettingGridWrapper .red_color_label,
+  .phoneBettingGridWrapper .black_color_label,
+  .phoneBettingGridWrapper .green_color_label {
+    font-size: 25px;
+  }
+  .phoneBettingGridWrapper .outside_color_label,
+  .phoneBettingGridWrapper .outside_small_color_label {
+    font-size: 20px;
+    fill: #f2f2f2;
+  }
+  .phoneBettingGridWrapper .outside_color_label .small {
+    fill: #f2f2f2;
+  }
+  .phoneBettingGridWrapper .outside_color_label.german {
+    font-size: 14px;
+  }
+
+  .phoneBettingGridWrapper .border {
+
+    pointer-events: none;
+    stroke-width: 0.75;
+    fill: #FFF9E3;
+    stroke: #FFF9E3;
+  }
+}

@@ -1,5 +1,5 @@
 .PortraitBetPanel {
-  padding: 8px;
+  padding: 10px;
   position: absolute;
   top: 0;
   left: 0;
@@ -19,18 +19,21 @@
 
   .phoneBettingGridWrapper .red_color {
     fill: #de2201;
+    fill-opacity: 0.8;
   }
   .phoneBettingGridWrapper .red_color.highlighted {
     fill: rgba(237,137,120,1);
   }
   .phoneBettingGridWrapper .black_color {
     fill: #1a1a1a;
+    fill-opacity: 0.8;
   }
   .phoneBettingGridWrapper .black_color.highlighted {
     fill: rgba(133,133,133,1);
   }
   .phoneBettingGridWrapper .green_color {
     fill: #149d2a;
+    fill-opacity: 0.8;
   }
   .phoneBettingGridWrapper .green_color.highlighted {
     fill: rgba(130,203,141,1);

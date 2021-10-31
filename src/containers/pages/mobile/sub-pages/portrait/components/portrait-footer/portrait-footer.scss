@@ -1,1 +1,42 @@
-.PortraitFooter {}
+@import "~bootstrap/scss/functions";
+@import "../../../../../../../assets/scss/utilities/variables";
+@import "~bootstrap/scss/mixins/breakpoints";
+@import "../../../../../../../assets/scss/utilities/functions";
+
+.PortraitFooter {
+    .Footer__RoundInfo {
+    padding: 4px 8px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    font-family: var(--font-family-sans-serif);
+    font-size: 11px;
+    line-height: 1.25;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.6);
+    color: var(--white);
+
+    &__Limits, &__Round {
+        width: 50%;
+        height: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    &__Limits {
+        width: 70%;
+    }
+
+    &__Round {
+        width: 30%;
+        justify-content: flex-end;
+        color: rgba(255, 255, 255, 0.75);
+    }
+
+    .limits {
+        font-weight: bold;
+        font-size: 12px;
+        color: var(--yellow);
+    }
+    }
+}

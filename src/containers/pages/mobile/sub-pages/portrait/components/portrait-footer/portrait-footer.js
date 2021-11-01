@@ -12,7 +12,7 @@ const PortraitFooter = () => {
     //const name = config.get('name', '').split(' ');
     const currency = useSelector((state) => (_.get(state, 'game.player.currency')))
     const currencySymbol = getSymbolFromCurrency(currency);
-    const roundId = useSelector((state) => (_.get(state, 'game.newRound.id')))
+    const roundId = useSelector((state) => (_.get(state, 'game.roundState.id')))
 
     return (
         <div className="PortraitFooter">

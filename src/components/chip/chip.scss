@@ -1,0 +1,68 @@
+.Chip {
+  width: 80px;
+  height: 80px;
+
+  &.blue {
+    .nominal {
+      fill: #fff;
+    }
+
+    .background {
+      fill: #127cc9;
+    }
+  }
+
+  &.green {
+    .nominal {
+      fill: #fff;
+    }
+
+    .background {
+      fill: #12c966;
+    }
+  }
+
+  &.orange {
+    .nominal {
+      fill: #fff;
+    }
+
+    .background {
+      fill: #c96a12;
+    }
+  }
+
+  &.red {
+    .nominal {
+      fill: #fff;
+    }
+
+    .background {
+      fill: #c91230;
+    }
+  }
+
+  &.dark {
+    .nominal {
+      fill: #fff;
+    }
+
+    .background {
+      fill: #393c4c;
+    }
+  }
+
+  &.purple {
+    .nominal {
+      fill: #fff;
+    }
+
+    .background {
+      fill: #503251;
+    }
+  }
+
+    .nominal {
+      font-family: "Anton", Roboto, Ubuntu, "Fira Sans", system-ui, -apple-system, sans-serif;
+    }
+}

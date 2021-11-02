@@ -5,6 +5,9 @@ export const targets = [
         "cells": [
             0
         ],
+        "coordinates": {
+            "mobile": [187.39, 0],
+        },
         "rate": 35
     },
     {
@@ -13,6 +16,9 @@ export const targets = [
         "cells": [
             1
         ],
+        "coordinates": {
+            "mobile": [115.36, 40.16],
+        },
         "rate": 35
     },
     {
@@ -21,6 +27,9 @@ export const targets = [
         "cells": [
             2
         ],
+        "coordinates": {
+            "mobile": [187.36, 40.16],
+        },
         "rate": 35
     },
     {
@@ -29,6 +38,9 @@ export const targets = [
         "cells": [
             3
         ],
+        "coordinates": {
+            "mobile": [260.36, 40.16],
+        },
         "rate": 35
     },
     {
@@ -37,6 +49,9 @@ export const targets = [
         "cells": [
             4
         ],
+        "coordinates": {
+            "mobile": [115.36, 82.32],
+        },
         "rate": 35
     },
     {
@@ -45,6 +60,9 @@ export const targets = [
         "cells": [
             5
         ],
+        "coordinates": {
+            "mobile": [187.36, 82.32],
+        },
         "rate": 35
     },
     {
@@ -53,6 +71,9 @@ export const targets = [
         "cells": [
             6
         ],
+        "coordinates": {
+            "mobile": [260.36, 82.32],
+        },
         "rate": 35
     },
     {
@@ -61,6 +82,9 @@ export const targets = [
         "cells": [
             7
         ],
+        "coordinates": {
+            "mobile": [115.36, 124.68],
+        },
         "rate": 35
     },
     {
@@ -69,6 +93,9 @@ export const targets = [
         "cells": [
             8
         ],
+        "coordinates": {
+            "mobile": [187.36, 124.68],
+        },
         "rate": 35
     },
     {
@@ -77,6 +104,9 @@ export const targets = [
         "cells": [
             9
         ],
+        "coordinates": {
+            "mobile": [260.36, 124.68],
+        },
         "rate": 35
     },
     {
@@ -85,6 +115,9 @@ export const targets = [
         "cells": [
             10
         ],
+        "coordinates": {
+            "mobile": [115.36, 167.6],
+        },
         "rate": 35
     },
     {
@@ -93,6 +126,9 @@ export const targets = [
         "cells": [
             11
         ],
+        "coordinates": {
+            "mobile": [187.36, 167.6],
+        },
         "rate": 35
     },
     {
@@ -101,6 +137,9 @@ export const targets = [
         "cells": [
             12
         ],
+        "coordinates": {
+            "mobile": [260.36, 167.6],
+        },
         "rate": 35
     },
     {
@@ -109,6 +148,9 @@ export const targets = [
         "cells": [
             13
         ],
+        "coordinates": {
+            "mobile": [115.36, 210.15],
+        },
         "rate": 35
     },
     {
@@ -117,6 +159,9 @@ export const targets = [
         "cells": [
             14
         ],
+        "coordinates": {
+            "mobile": [187.36, 210.15],
+        },
         "rate": 35
     },
     {
@@ -125,6 +170,9 @@ export const targets = [
         "cells": [
             15
         ],
+        "coordinates": {
+            "mobile": [260.36, 210.15],
+        },
         "rate": 35
     },
     {
@@ -133,6 +181,9 @@ export const targets = [
         "cells": [
             16
         ],
+        "coordinates": {
+            "mobile": [115.36, 250.75],
+        },
         "rate": 35
     },
     {
@@ -141,6 +192,9 @@ export const targets = [
         "cells": [
             17
         ],
+        "coordinates": {
+            "mobile": [187.36, 250.75],
+        },
         "rate": 35
     },
     {
@@ -149,6 +203,9 @@ export const targets = [
         "cells": [
             18
         ],
+        "coordinates": {
+            "mobile": [260.36, 250.75],
+        },
         "rate": 35
     },
     {
@@ -157,6 +214,9 @@ export const targets = [
         "cells": [
             19
         ],
+        "coordinates": {
+            "mobile": [115.36, 294.04],
+        },
         "rate": 35
     },
     {
@@ -165,6 +225,9 @@ export const targets = [
         "cells": [
             20
         ],
+        "coordinates": {
+            "mobile": [187.36, 294.04],
+        },
         "rate": 35
     },
     {
@@ -173,6 +236,9 @@ export const targets = [
         "cells": [
             21
         ],
+        "coordinates": {
+            "mobile": [260.36, 294.04],
+        },
         "rate": 35
     },
     {
@@ -181,6 +247,9 @@ export const targets = [
         "cells": [
             22
         ],
+        "coordinates": {
+            "mobile": [115.36, 337.09],
+        },
         "rate": 35
     },
     {
@@ -189,6 +258,9 @@ export const targets = [
         "cells": [
             23
         ],
+        "coordinates": {
+            "mobile": [187.36, 337.09],
+        },
         "rate": 35
     },
     {
@@ -197,6 +269,9 @@ export const targets = [
         "cells": [
             24
         ],
+        "coordinates": {
+            "mobile": [260.36, 337.09],
+        },
         "rate": 35
     },
     {
@@ -205,6 +280,9 @@ export const targets = [
         "cells": [
             25
         ],
+        "coordinates": {
+            "mobile": [115.36, 379.05],
+        },
         "rate": 35
     },
     {
@@ -213,6 +291,9 @@ export const targets = [
         "cells": [
             26
         ],
+        "coordinates": {
+            "mobile": [187.36, 379.05],
+        },
         "rate": 35
     },
     {
@@ -221,6 +302,9 @@ export const targets = [
         "cells": [
             27
         ],
+        "coordinates": {
+            "mobile": [260.36, 379.05],
+        },
         "rate": 35
     },
     {
@@ -229,6 +313,9 @@ export const targets = [
         "cells": [
             28
         ],
+        "coordinates": {
+            "mobile": [115.36, 420.51],
+        },
         "rate": 35
     },
     {
@@ -237,6 +324,9 @@ export const targets = [
         "cells": [
             29
         ],
+        "coordinates": {
+            "mobile": [187.36, 420.51],
+        },
         "rate": 35
     },
     {
@@ -245,6 +335,9 @@ export const targets = [
         "cells": [
             30
         ],
+        "coordinates": {
+            "mobile": [260.36, 420.51],
+        },
         "rate": 35
     },
     {
@@ -253,6 +346,9 @@ export const targets = [
         "cells": [
             31
         ],
+        "coordinates": {
+            "mobile": [115.36, 462.85],
+        },
         "rate": 35
     },
     {
@@ -261,6 +357,9 @@ export const targets = [
         "cells": [
             32
         ],
+        "coordinates": {
+            "mobile": [187.36, 462.85],
+        },
         "rate": 35
     },
     {
@@ -269,6 +368,9 @@ export const targets = [
         "cells": [
             33
         ],
+        "coordinates": {
+            "mobile": [260.36, 462.85],
+        },
         "rate": 35
     },
     {
@@ -277,6 +379,9 @@ export const targets = [
         "cells": [
             34
         ],
+        "coordinates": {
+            "mobile": [115.36, 505.01],
+        },
         "rate": 35
     },
     {
@@ -285,6 +390,9 @@ export const targets = [
         "cells": [
             35
         ],
+        "coordinates": {
+            "mobile": [187.36, 505.01],
+        },
         "rate": 35
     },
     {
@@ -293,6 +401,9 @@ export const targets = [
         "cells": [
             36
         ],
+        "coordinates": {
+            "mobile": [260.36, 505.01],
+        },
         "rate": 35
     },
     {
@@ -1377,6 +1488,9 @@ export const targets = [
             31,
             34
         ],
+        "coordinates": {
+            "mobile": [115.36, 545.77],
+        },
         "rate": 2
     },
     {
@@ -1396,6 +1510,9 @@ export const targets = [
             32,
             35
         ],
+        "coordinates": {
+            "mobile": [187.36, 545.77],
+        },
         "rate": 2
     },
     {
@@ -1415,6 +1532,9 @@ export const targets = [
             33,
             36
         ],
+        "coordinates": {
+            "mobile": [260.36, 545.77],
+        },
         "rate": 2
     },
     {
@@ -1434,6 +1554,9 @@ export const targets = [
             11,
             12
         ],
+        "coordinates": {
+            "mobile": [53.02, 105.07],
+        },
         "rate": 2
     },
     {
@@ -1453,6 +1576,9 @@ export const targets = [
             23,
             24
         ],
+        "coordinates": {
+            "mobile": [53.02, 274.07],
+        },
         "rate": 2
     },
     {
@@ -1472,6 +1598,9 @@ export const targets = [
             35,
             36
         ],
+        "coordinates": {
+            "mobile": [53.02, 443.26],
+        },
         "rate": 2
     },
     {
@@ -1497,6 +1626,9 @@ export const targets = [
             34,
             36
         ],
+        "coordinates": {
+            "mobile": [4.74, 231.72],
+        },
         "rate": 1
     },
     {
@@ -1522,6 +1654,9 @@ export const targets = [
             33,
             35
         ],
+        "coordinates": {
+            "mobile": [4.74, 316.41],
+        },
         "rate": 1
     },
     {
@@ -1547,6 +1682,9 @@ export const targets = [
             33,
             35
         ],
+        "coordinates": {
+            "mobile": [4.74, 400.91],
+        },
         "rate": 1
     },
     {
@@ -1572,6 +1710,9 @@ export const targets = [
             34,
             36
         ],
+        "coordinates": {
+            "mobile": [4.74, 147.02],
+        },
         "rate": 1
     },
     {
@@ -1597,6 +1738,9 @@ export const targets = [
             17,
             18
         ],
+        "coordinates": {
+            "mobile": [4.74, 485.81],
+        },
         "rate": 1
     },
     {
@@ -1622,6 +1766,9 @@ export const targets = [
             35,
             36
         ],
+        "coordinates": {
+            "mobile": [4.74, 62.32],
+        },
         "rate": 1
     },
     {

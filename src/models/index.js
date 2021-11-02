@@ -9,6 +9,7 @@ import RouletteLimitModel from './roulette-limit';
 import PlayerBetApiModel from './player-bet-api';
 import RoundStateModel from './round-state';
 import BetPlacedModel from './bet-placed';
+import ChipModel from './chip';
 
 export {
     WinNumberModel,
@@ -22,4 +23,5 @@ export {
     PlayerBetApiModel,
     RoundStateModel,
     BetPlacedModel,
+    ChipModel,
 };

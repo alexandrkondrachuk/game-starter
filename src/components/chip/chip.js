@@ -9,7 +9,7 @@ import './chip.scss';
 const numberAbbr = new NumberAbbreviate(['K', 'M', 'B', 'T']);
 
 function Chip({
-    nominal, color, onClick, className, precision, decimal,
+    nominal, color, onClick, className, precision, decimal, width, height,
 }) {
     const nominalSymbol = numberAbbr.abbreviate(nominal.toFixed(decimal), precision).toString();
     const nominalSymbolLength = nominalSymbol.length;
@@ -20,6 +20,8 @@ function Chip({
         <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 100 100"
+            width={width}
+            height={height}
             fill="none"
             className={cn({ Chip: true, [color]: true, [className]: !!className })}
             onClick={onClick}
@@ -41,6 +43,8 @@ Chip.defaultProps = {
     className: '',
     precision: 1,
     decimal: 2,
+    width: 80,
+    height: 80,
 };
 
 Chip.propTypes = {
@@ -50,6 +54,8 @@ Chip.propTypes = {
     className: PropTypes.string,
     precision: PropTypes.number,
     decimal: PropTypes.number,
+    width: PropTypes.number,
+    height: PropTypes.number,
 };
 
 export default Chip;

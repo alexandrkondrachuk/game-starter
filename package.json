@@ -26,6 +26,7 @@
     "react-scripts": "4.0.3",
     "reactstrap": "^9.0.0",
     "sass": "^1.43.4",
+    "use-hooks": "^2.0.0-rc.5",
     "use-orientation-change": "^1.0.4"
   },
   "scripts": {

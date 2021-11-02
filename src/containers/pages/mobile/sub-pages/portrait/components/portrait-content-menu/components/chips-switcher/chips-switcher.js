@@ -1,16 +1,35 @@
 import React from 'react';
+import * as cn from 'classnames';
+import * as _ from 'lodash';
 import Chip from '../../../../../../../../../components/chip';
+import { useSelector, useDispatch } from 'react-redux';
+import { setActiveChip, toggleMobileChip } from '../../../../../../../../../store/slices/bet/betSlice';
+import { useOnClickOutside } from "use-hooks";
+
 import './chips-switcher.scss';
 
 const ChipsSwitcher = () => {
-    const [showChip, setChipStatus] = React.useState(true);
-    const toggleChip = () => setChipStatus(!showChip);
+    const dispatch = useDispatch();
+    const zoneRef = React.useRef(null);
+    const chips = useSelector((state) => (_.get(state, 'bet.chips', [])));
+    const isMobileBetChipOpen = useSelector((state) => (_.get(state, 'bet.isMobileBetChipOpen', true)));
+    const activeChip = chips.find((chip) => (chip.active === true));
+    const toggleChip = () => dispatch(toggleMobileChip());
+    useOnClickOutside(zoneRef, toggleChip);
+
     return (
-        <button className="ChipsSwitcher" onClick={toggleChip}>
-            {showChip && <Chip nominal={10} color='orange' />}
-            {!showChip && <div className="ChipsSwitcher__Zone">Zone</div>}
+        <button className="ChipsSwitcher">
+            {isMobileBetChipOpen  && <Chip onClick={toggleChip} {...activeChip} />}
+            {!isMobileBetChipOpen  && <div ref={zoneRef} className="ChipsSwitcher__Zone">
+                {chips.map((chip, key) => (
+                    <Chip key={chip.id} onClick={() => dispatch(setActiveChip(chip?.nominal))} {...chip} className={cn('chip-selector', { [`index-${key}`]: true })}/>))}
+                <div className="zone-active-chip">
+                    <Chip onClick={toggleChip} {...activeChip} />
+                </div>
+            </div>}
         </button>
     );
-};
+}
+;
 
 export default ChipsSwitcher;

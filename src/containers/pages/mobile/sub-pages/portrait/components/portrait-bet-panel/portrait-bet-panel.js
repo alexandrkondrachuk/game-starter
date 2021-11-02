@@ -9,11 +9,14 @@ import './portrait-bet-panel.scss';
 import { roundStageEnum } from '../../../../../../../enums';
 
 function PortraitBetPanel() {
+    const internalTargetGroups = [2, 3, 5, 6];
     const targets = config.get('targets');
+    const targetNodes = targets.filter((target) => (internalTargetGroups.includes(target.groupId)));
+    const chip = config.get('chip');
     const chips = useSelector((state) => (_.get(state, 'bet.chips', [])));
     const activeChip = chips.find((chip) => (chip.active === true));
     const roundStage = useSelector((state) => (_.get(state, 'game.roundState.stage')));
-    const isOpen = roundStageEnum.get(roundStage).value === roundStageEnum.get(2).value;
+    const isOpen = roundStageEnum?.get(roundStage)?.value === roundStageEnum?.get(2)?.value;
     const totalBets = useSelector((state) => (_.get(state, 'game.player.totalBets', [])));
     const getChipCoordinates = (key) => {
         const target = targets.find((target) => (target.key === key));
@@ -37,9 +40,9 @@ function PortraitBetPanel() {
             <g
                 key={bet.key}
                 data-target={bet.key}
-                transform={`translate(${bet.coordinates[0]}, ${bet.coordinates[1]})`}
+                transform={`translate(${bet.coordinates[0] - chip.width / 2}, ${bet.coordinates[1] - chip.height / 2})`}
             >
-                <Chip nominal={_.get(bet, 'betValue', 0)} width={40} height={40} color={_.get(bet, 'color', 'orange')}/>
+                <Chip nominal={_.get(bet, 'betValue', 0)} width={chip.width} height={chip.height} color={_.get(bet, 'color', 'orange')}/>
             </g>));
     };
 
@@ -850,6 +853,17 @@ function PortraitBetPanel() {
                     </text>
                 </g>
                 {renderChips()}
+                {targetNodes.map((target) => (
+                    <circle
+                        className="bet-internal"
+                        data-bet-spot-id={target.key}
+                        cx={target.coordinates.mobile[0]}
+                        cy={target.coordinates.mobile[1]}
+                        r={10}
+                        fill="blue"
+                        fillOpacity={0}
+                        onClick={() => doBet(target.key)}
+                    />))}
             </g>
         </svg>
     );

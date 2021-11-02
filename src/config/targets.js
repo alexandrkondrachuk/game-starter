@@ -6,7 +6,7 @@ export const targets = [
             0
         ],
         "coordinates": {
-            "mobile": [187.39, 0],
+            "mobile": [207.39, 20],
         },
         "rate": 35
     },
@@ -17,7 +17,7 @@ export const targets = [
             1
         ],
         "coordinates": {
-            "mobile": [115.36, 40.16],
+            "mobile": [135.36, 60.16],
         },
         "rate": 35
     },
@@ -28,7 +28,7 @@ export const targets = [
             2
         ],
         "coordinates": {
-            "mobile": [187.36, 40.16],
+            "mobile": [207.36, 60.16],
         },
         "rate": 35
     },
@@ -39,7 +39,7 @@ export const targets = [
             3
         ],
         "coordinates": {
-            "mobile": [260.36, 40.16],
+            "mobile": [280.36, 60.16],
         },
         "rate": 35
     },
@@ -50,7 +50,7 @@ export const targets = [
             4
         ],
         "coordinates": {
-            "mobile": [115.36, 82.32],
+            "mobile": [135.36, 102.32],
         },
         "rate": 35
     },
@@ -61,7 +61,7 @@ export const targets = [
             5
         ],
         "coordinates": {
-            "mobile": [187.36, 82.32],
+            "mobile": [207.36, 102.32],
         },
         "rate": 35
     },
@@ -72,7 +72,7 @@ export const targets = [
             6
         ],
         "coordinates": {
-            "mobile": [260.36, 82.32],
+            "mobile": [280.36, 102.32],
         },
         "rate": 35
     },
@@ -83,7 +83,7 @@ export const targets = [
             7
         ],
         "coordinates": {
-            "mobile": [115.36, 124.68],
+            "mobile": [135.36, 144.68],
         },
         "rate": 35
     },
@@ -94,7 +94,7 @@ export const targets = [
             8
         ],
         "coordinates": {
-            "mobile": [187.36, 124.68],
+            "mobile": [207.36, 144.68],
         },
         "rate": 35
     },
@@ -105,7 +105,7 @@ export const targets = [
             9
         ],
         "coordinates": {
-            "mobile": [260.36, 124.68],
+            "mobile": [280.36, 144.68],
         },
         "rate": 35
     },
@@ -116,7 +116,7 @@ export const targets = [
             10
         ],
         "coordinates": {
-            "mobile": [115.36, 167.6],
+            "mobile": [135.36, 187.6],
         },
         "rate": 35
     },
@@ -127,7 +127,7 @@ export const targets = [
             11
         ],
         "coordinates": {
-            "mobile": [187.36, 167.6],
+            "mobile": [207.36, 187.6],
         },
         "rate": 35
     },
@@ -138,7 +138,7 @@ export const targets = [
             12
         ],
         "coordinates": {
-            "mobile": [260.36, 167.6],
+            "mobile": [280.36, 187.6],
         },
         "rate": 35
     },
@@ -149,7 +149,7 @@ export const targets = [
             13
         ],
         "coordinates": {
-            "mobile": [115.36, 210.15],
+            "mobile": [135.36, 230.15],
         },
         "rate": 35
     },
@@ -160,7 +160,7 @@ export const targets = [
             14
         ],
         "coordinates": {
-            "mobile": [187.36, 210.15],
+            "mobile": [207.36, 230.15],
         },
         "rate": 35
     },
@@ -171,7 +171,7 @@ export const targets = [
             15
         ],
         "coordinates": {
-            "mobile": [260.36, 210.15],
+            "mobile": [280.36, 230.15],
         },
         "rate": 35
     },
@@ -182,7 +182,7 @@ export const targets = [
             16
         ],
         "coordinates": {
-            "mobile": [115.36, 250.75],
+            "mobile": [135.36, 270.75],
         },
         "rate": 35
     },
@@ -193,7 +193,7 @@ export const targets = [
             17
         ],
         "coordinates": {
-            "mobile": [187.36, 250.75],
+            "mobile": [207.36, 270.75],
         },
         "rate": 35
     },
@@ -204,7 +204,7 @@ export const targets = [
             18
         ],
         "coordinates": {
-            "mobile": [260.36, 250.75],
+            "mobile": [280.36, 270.75],
         },
         "rate": 35
     },
@@ -215,7 +215,7 @@ export const targets = [
             19
         ],
         "coordinates": {
-            "mobile": [115.36, 294.04],
+            "mobile": [135.36, 314.04],
         },
         "rate": 35
     },
@@ -226,7 +226,7 @@ export const targets = [
             20
         ],
         "coordinates": {
-            "mobile": [187.36, 294.04],
+            "mobile": [207.36, 314.04],
         },
         "rate": 35
     },
@@ -237,7 +237,7 @@ export const targets = [
             21
         ],
         "coordinates": {
-            "mobile": [260.36, 294.04],
+            "mobile": [280.36, 314.04],
         },
         "rate": 35
     },
@@ -248,7 +248,7 @@ export const targets = [
             22
         ],
         "coordinates": {
-            "mobile": [115.36, 337.09],
+            "mobile": [135.36, 357.09],
         },
         "rate": 35
     },
@@ -259,7 +259,7 @@ export const targets = [
             23
         ],
         "coordinates": {
-            "mobile": [187.36, 337.09],
+            "mobile": [207.36, 357.09],
         },
         "rate": 35
     },
@@ -270,7 +270,7 @@ export const targets = [
             24
         ],
         "coordinates": {
-            "mobile": [260.36, 337.09],
+            "mobile": [280.36, 357.09],
         },
         "rate": 35
     },
@@ -281,7 +281,7 @@ export const targets = [
             25
         ],
         "coordinates": {
-            "mobile": [115.36, 379.05],
+            "mobile": [135.36, 399.05],
         },
         "rate": 35
     },
@@ -292,7 +292,7 @@ export const targets = [
             26
         ],
         "coordinates": {
-            "mobile": [187.36, 379.05],
+            "mobile": [207.36, 399.05],
         },
         "rate": 35
     },
@@ -303,7 +303,7 @@ export const targets = [
             27
         ],
         "coordinates": {
-            "mobile": [260.36, 379.05],
+            "mobile": [280.36, 399.05],
         },
         "rate": 35
     },
@@ -314,7 +314,7 @@ export const targets = [
             28
         ],
         "coordinates": {
-            "mobile": [115.36, 420.51],
+            "mobile": [135.36, 440.51],
         },
         "rate": 35
     },
@@ -325,7 +325,7 @@ export const targets = [
             29
         ],
         "coordinates": {
-            "mobile": [187.36, 420.51],
+            "mobile": [207.36, 440.51],
         },
         "rate": 35
     },
@@ -336,7 +336,7 @@ export const targets = [
             30
         ],
         "coordinates": {
-            "mobile": [260.36, 420.51],
+            "mobile": [280.36, 440.51],
         },
         "rate": 35
     },
@@ -347,7 +347,7 @@ export const targets = [
             31
         ],
         "coordinates": {
-            "mobile": [115.36, 462.85],
+            "mobile": [135.36, 482.85],
         },
         "rate": 35
     },
@@ -358,7 +358,7 @@ export const targets = [
             32
         ],
         "coordinates": {
-            "mobile": [187.36, 462.85],
+            "mobile": [207.36, 482.85],
         },
         "rate": 35
     },
@@ -369,7 +369,7 @@ export const targets = [
             33
         ],
         "coordinates": {
-            "mobile": [260.36, 462.85],
+            "mobile": [280.36, 482.85],
         },
         "rate": 35
     },
@@ -380,7 +380,7 @@ export const targets = [
             34
         ],
         "coordinates": {
-            "mobile": [115.36, 505.01],
+            "mobile": [135.36, 525.01],
         },
         "rate": 35
     },
@@ -391,7 +391,7 @@ export const targets = [
             35
         ],
         "coordinates": {
-            "mobile": [187.36, 505.01],
+            "mobile": [207.36, 525.01],
         },
         "rate": 35
     },
@@ -402,7 +402,7 @@ export const targets = [
             36
         ],
         "coordinates": {
-            "mobile": [260.36, 505.01],
+            "mobile": [280.36, 525.01],
         },
         "rate": 35
     },
@@ -413,6 +413,9 @@ export const targets = [
             0,
             1
         ],
+        "coordinates": {
+            "mobile": [135.36, 39.78],
+        },
         "rate": 17
     },
     {
@@ -422,6 +425,9 @@ export const targets = [
             0,
             2
         ],
+        "coordinates": {
+            "mobile": [207.36, 39.78],
+        },
         "rate": 17
     },
     {
@@ -431,6 +437,9 @@ export const targets = [
             0,
             3
         ],
+        "coordinates": {
+            "mobile": [280.36, 39.78],
+        },
         "rate": 17
     },
     {
@@ -440,6 +449,9 @@ export const targets = [
             1,
             2
         ],
+        "coordinates": {
+            "mobile": [170.57, 60.16],
+        },
         "rate": 17
     },
     {
@@ -449,6 +461,9 @@ export const targets = [
             1,
             4
         ],
+        "coordinates": {
+            "mobile": [135.45, 82.00],
+        },
         "rate": 17
     },
     {
@@ -458,6 +473,9 @@ export const targets = [
             2,
             3
         ],
+        "coordinates": {
+            "mobile": [243.48, 60.16],
+        },
         "rate": 17
     },
     {
@@ -467,6 +485,9 @@ export const targets = [
             2,
             5
         ],
+        "coordinates": {
+            "mobile": [207.24, 82.00],
+        },
         "rate": 17
     },
     {
@@ -476,6 +497,9 @@ export const targets = [
             3,
             6
         ],
+        "coordinates": {
+            "mobile": [280.00, 82.00],
+        },
         "rate": 17
     },
     {
@@ -485,6 +509,9 @@ export const targets = [
             4,
             5
         ],
+        "coordinates": {
+            "mobile": [170.58, 102.32],
+        },
         "rate": 17
     },
     {
@@ -494,6 +521,9 @@ export const targets = [
             4,
             7
         ],
+        "coordinates": {
+            "mobile": [135.36, 125.07],
+        },
         "rate": 17
     },
     {
@@ -503,6 +533,9 @@ export const targets = [
             5,
             6
         ],
+        "coordinates": {
+            "mobile": [243.41, 102.32],
+        },
         "rate": 17
     },
     {
@@ -512,6 +545,9 @@ export const targets = [
             5,
             8
         ],
+        "coordinates": {
+            "mobile": [206.20, 125.07],
+        },
         "rate": 17
     },
     {
@@ -521,6 +557,9 @@ export const targets = [
             6,
             9
         ],
+        "coordinates": {
+            "mobile": [279.22, 125.07],
+        },
         "rate": 17
     },
     {
@@ -530,6 +569,9 @@ export const targets = [
             7,
             8
         ],
+        "coordinates": {
+            "mobile": [170.58, 144.68],
+        },
         "rate": 17
     },
     {
@@ -539,6 +581,9 @@ export const targets = [
             7,
             10
         ],
+        "coordinates": {
+            "mobile": [135.36, 167.02],
+        },
         "rate": 17
     },
     {
@@ -548,6 +593,9 @@ export const targets = [
             8,
             9
         ],
+        "coordinates": {
+            "mobile": [243.48, 144.68],
+        },
         "rate": 17
     },
     {
@@ -557,6 +605,9 @@ export const targets = [
             8,
             11
         ],
+        "coordinates": {
+            "mobile": [207.36, 167.02],
+        },
         "rate": 17
     },
     {
@@ -566,6 +617,9 @@ export const targets = [
             9,
             12
         ],
+        "coordinates": {
+            "mobile": [280.36, 167.02],
+        },
         "rate": 17
     },
     {
@@ -575,6 +629,9 @@ export const targets = [
             10,
             11
         ],
+        "coordinates": {
+            "mobile": [170.57, 185.41],
+        },
         "rate": 17
     },
     {
@@ -584,6 +641,9 @@ export const targets = [
             10,
             13
         ],
+        "coordinates": {
+            "mobile": [135.36, 209.22],
+        },
         "rate": 17
     },
     {
@@ -593,6 +653,9 @@ export const targets = [
             11,
             12
         ],
+        "coordinates": {
+            "mobile": [243.48, 187.6],
+        },
         "rate": 17
     },
     {
@@ -602,6 +665,9 @@ export const targets = [
             11,
             14
         ],
+        "coordinates": {
+            "mobile": [207.36, 209.30],
+        },
         "rate": 17
     },
     {
@@ -611,6 +677,9 @@ export const targets = [
             12,
             15
         ],
+        "coordinates": {
+            "mobile": [280.36, 209.36],
+        },
         "rate": 17
     },
     {
@@ -620,6 +689,9 @@ export const targets = [
             13,
             14
         ],
+        "coordinates": {
+            "mobile": [170.48, 230.15],
+        },
         "rate": 17
     },
     {
@@ -629,6 +701,9 @@ export const targets = [
             13,
             16
         ],
+        "coordinates": {
+            "mobile": [135.36, 251.66],
+        },
         "rate": 17
     },
     {
@@ -638,6 +713,9 @@ export const targets = [
             14,
             15
         ],
+        "coordinates": {
+            "mobile": [243.48, 230.15],
+        },
         "rate": 17
     },
     {
@@ -647,6 +725,9 @@ export const targets = [
             14,
             17
         ],
+        "coordinates": {
+            "mobile": [207.36, 251.71],
+        },
         "rate": 17
     },
     {
@@ -656,6 +737,9 @@ export const targets = [
             15,
             18
         ],
+        "coordinates": {
+            "mobile": [280.36, 251.65],
+        },
         "rate": 17
     },
     {
@@ -665,6 +749,9 @@ export const targets = [
             16,
             17
         ],
+        "coordinates": {
+            "mobile": [170.48, 270.75],
+        },
         "rate": 17
     },
     {
@@ -674,6 +761,9 @@ export const targets = [
             16,
             19
         ],
+        "coordinates": {
+            "mobile": [135.36, 294.04],
+        },
         "rate": 17
     },
     {
@@ -683,6 +773,9 @@ export const targets = [
             17,
             18
         ],
+        "coordinates": {
+            "mobile": [243.48, 270.75],
+        },
         "rate": 17
     },
     {
@@ -692,6 +785,9 @@ export const targets = [
             17,
             20
         ],
+        "coordinates": {
+            "mobile": [207.36, 294.06],
+        },
         "rate": 17
     },
     {
@@ -701,6 +797,9 @@ export const targets = [
             18,
             21
         ],
+        "coordinates": {
+            "mobile": [280.36, 294.13],
+        },
         "rate": 17
     },
     {
@@ -710,6 +809,9 @@ export const targets = [
             19,
             20
         ],
+        "coordinates": {
+            "mobile": [170.48, 314.04],
+        },
         "rate": 17
     },
     {
@@ -719,6 +821,9 @@ export const targets = [
             19,
             22
         ],
+        "coordinates": {
+            "mobile": [135.36, 336.28],
+        },
         "rate": 17
     },
     {
@@ -728,6 +833,9 @@ export const targets = [
             20,
             21
         ],
+        "coordinates": {
+            "mobile": [243.48, 314.04],
+        },
         "rate": 17
     },
     {
@@ -737,6 +845,9 @@ export const targets = [
             20,
             23
         ],
+        "coordinates": {
+            "mobile": [207.36, 336.42],
+        },
         "rate": 17
     },
     {
@@ -746,6 +857,9 @@ export const targets = [
             21,
             24
         ],
+        "coordinates": {
+            "mobile": [280.36, 336.45],
+        },
         "rate": 17
     },
     {
@@ -755,6 +869,9 @@ export const targets = [
             22,
             23
         ],
+        "coordinates": {
+            "mobile": [170.48, 357.09],
+        },
         "rate": 17
     },
     {
@@ -764,6 +881,9 @@ export const targets = [
             22,
             25
         ],
+        "coordinates": {
+            "mobile": [135.36, 378.74],
+        },
         "rate": 17
     },
     {
@@ -773,6 +893,9 @@ export const targets = [
             23,
             24
         ],
+        "coordinates": {
+            "mobile": [243.48, 357.09],
+        },
         "rate": 17
     },
     {
@@ -782,6 +905,9 @@ export const targets = [
             23,
             26
         ],
+        "coordinates": {
+            "mobile": [207.36, 378.79],
+        },
         "rate": 17
     },
     {
@@ -791,6 +917,9 @@ export const targets = [
             24,
             27
         ],
+        "coordinates": {
+            "mobile": [280.36, 378.73],
+        },
         "rate": 17
     },
     {
@@ -800,6 +929,9 @@ export const targets = [
             25,
             26
         ],
+        "coordinates": {
+            "mobile": [170.48, 399.05],
+        },
         "rate": 17
     },
     {
@@ -809,6 +941,9 @@ export const targets = [
             25,
             28
         ],
+        "coordinates": {
+            "mobile": [135.36, 421.15],
+        },
         "rate": 17
     },
     {
@@ -818,6 +953,9 @@ export const targets = [
             26,
             27
         ],
+        "coordinates": {
+            "mobile": [243.48, 399.05],
+        },
         "rate": 17
     },
     {
@@ -827,6 +965,9 @@ export const targets = [
             26,
             29
         ],
+        "coordinates": {
+            "mobile": [207.36, 421.13],
+        },
         "rate": 17
     },
     {
@@ -836,6 +977,9 @@ export const targets = [
             27,
             30
         ],
+        "coordinates": {
+            "mobile": [280.36, 421.15],
+        },
         "rate": 17
     },
     {
@@ -845,6 +989,9 @@ export const targets = [
             28,
             29
         ],
+        "coordinates": {
+            "mobile": [170.48, 440.51],
+        },
         "rate": 17
     },
     {
@@ -854,6 +1001,9 @@ export const targets = [
             28,
             31
         ],
+        "coordinates": {
+            "mobile": [135.36, 463.45],
+        },
         "rate": 17
     },
     {
@@ -863,6 +1013,9 @@ export const targets = [
             29,
             30
         ],
+        "coordinates": {
+            "mobile": [243.48, 440.51],
+        },
         "rate": 17
     },
     {
@@ -872,6 +1025,9 @@ export const targets = [
             29,
             32
         ],
+        "coordinates": {
+            "mobile": [207.36, 463.45],
+        },
         "rate": 17
     },
     {
@@ -881,6 +1037,9 @@ export const targets = [
             30,
             33
         ],
+        "coordinates": {
+            "mobile": [280.36, 463.48],
+        },
         "rate": 17
     },
     {
@@ -890,6 +1049,9 @@ export const targets = [
             31,
             32
         ],
+        "coordinates": {
+            "mobile": [170.48, 482.85],
+        },
         "rate": 17
     },
     {
@@ -899,6 +1061,9 @@ export const targets = [
             31,
             34
         ],
+        "coordinates": {
+            "mobile": [135.36, 505.80],
+        },
         "rate": 17
     },
     {
@@ -908,6 +1073,9 @@ export const targets = [
             32,
             33
         ],
+        "coordinates": {
+            "mobile": [243.48, 482.85],
+        },
         "rate": 17
     },
     {
@@ -917,6 +1085,9 @@ export const targets = [
             32,
             35
         ],
+        "coordinates": {
+            "mobile": [207.36, 505.86],
+        },
         "rate": 17
     },
     {
@@ -926,6 +1097,9 @@ export const targets = [
             33,
             36
         ],
+        "coordinates": {
+            "mobile": [280.36, 505.79],
+        },
         "rate": 17
     },
     {
@@ -935,6 +1109,9 @@ export const targets = [
             34,
             35
         ],
+        "coordinates": {
+            "mobile": [170.48, 525.01],
+        },
         "rate": 17
     },
     {
@@ -944,6 +1121,9 @@ export const targets = [
             35,
             36
         ],
+        "coordinates": {
+            "mobile": [243.48, 525.01],
+        },
         "rate": 17
     },
     {
@@ -954,6 +1134,9 @@ export const targets = [
             2,
             3
         ],
+        "coordinates": {
+            "mobile": [97.81, 60.16],
+        },
         "rate": 11
     },
     {
@@ -964,6 +1147,9 @@ export const targets = [
             5,
             6
         ],
+        "coordinates": {
+            "mobile": [97.76, 102.32],
+        },
         "rate": 11
     },
     {
@@ -974,6 +1160,9 @@ export const targets = [
             8,
             9
         ],
+        "coordinates": {
+            "mobile": [97.81, 144.68],
+        },
         "rate": 11
     },
     {
@@ -984,6 +1173,9 @@ export const targets = [
             11,
             12
         ],
+        "coordinates": {
+            "mobile": [97.81, 187.6],
+        },
         "rate": 11
     },
     {
@@ -994,6 +1186,9 @@ export const targets = [
             14,
             15
         ],
+        "coordinates": {
+            "mobile": [97.81, 230.15],
+        },
         "rate": 11
     },
     {
@@ -1004,6 +1199,9 @@ export const targets = [
             17,
             18
         ],
+        "coordinates": {
+            "mobile": [97.81, 270.75],
+        },
         "rate": 11
     },
     {
@@ -1014,6 +1212,9 @@ export const targets = [
             20,
             21
         ],
+        "coordinates": {
+            "mobile": [97.81, 314.04],
+        },
         "rate": 11
     },
     {
@@ -1024,6 +1225,9 @@ export const targets = [
             23,
             24
         ],
+        "coordinates": {
+            "mobile": [97.81, 357.09],
+        },
         "rate": 11
     },
     {
@@ -1034,6 +1238,9 @@ export const targets = [
             26,
             27
         ],
+        "coordinates": {
+            "mobile": [97.81, 399.05],
+        },
         "rate": 11
     },
     {
@@ -1044,6 +1251,9 @@ export const targets = [
             29,
             30
         ],
+        "coordinates": {
+            "mobile": [97.81, 482.85],
+        },
         "rate": 11
     },
     {
@@ -1054,6 +1264,9 @@ export const targets = [
             32,
             33
         ],
+        "coordinates": {
+            "mobile": [97.81, 440.51],
+        },
         "rate": 11
     },
     {
@@ -1064,6 +1277,9 @@ export const targets = [
             35,
             36
         ],
+        "coordinates": {
+            "mobile": [97.81, 525.01],
+        },
         "rate": 11
     },
     {
@@ -1074,6 +1290,9 @@ export const targets = [
             1,
             2
         ],
+        "coordinates": {
+            "mobile": [170.48, 39.78],
+        },
         "rate": 11
     },
     {
@@ -1084,6 +1303,9 @@ export const targets = [
             2,
             3
         ],
+        "coordinates": {
+            "mobile": [243.48, 39.78],
+        },
         "rate": 11
     },
     {
@@ -1095,6 +1317,9 @@ export const targets = [
             4,
             5
         ],
+        "coordinates": {
+            "mobile": [170.71, 82.00],
+        },
         "rate": 8
     },
     {
@@ -1106,6 +1331,9 @@ export const targets = [
             5,
             6
         ],
+        "coordinates": {
+            "mobile": [243.34, 82.00],
+        },
         "rate": 8
     },
     {
@@ -1117,6 +1345,9 @@ export const targets = [
             7,
             8
         ],
+        "coordinates": {
+            "mobile": [170.58, 125.07],
+        },
         "rate": 8
     },
     {
@@ -1128,6 +1359,9 @@ export const targets = [
             8,
             9
         ],
+        "coordinates": {
+            "mobile": [243.41, 125.07],
+        },
         "rate": 8
     },
     {
@@ -1139,6 +1373,9 @@ export const targets = [
             10,
             11
         ],
+        "coordinates": {
+            "mobile": [170.58, 166.88],
+        },
         "rate": 8
     },
     {
@@ -1150,6 +1387,9 @@ export const targets = [
             11,
             12
         ],
+        "coordinates": {
+            "mobile": [243.43, 166.94],
+        },
         "rate": 8
     },
     {
@@ -1161,6 +1401,9 @@ export const targets = [
             13,
             14
         ],
+        "coordinates": {
+            "mobile": [170.58, 209.30],
+        },
         "rate": 8
     },
     {
@@ -1172,6 +1415,9 @@ export const targets = [
             14,
             15
         ],
+        "coordinates": {
+            "mobile": [243.41, 209.34],
+        },
         "rate": 8
     },
     {
@@ -1183,6 +1429,9 @@ export const targets = [
             16,
             17
         ],
+        "coordinates": {
+            "mobile": [170.61, 251.69],
+        },
         "rate": 8
     },
     {
@@ -1194,6 +1443,9 @@ export const targets = [
             17,
             18
         ],
+        "coordinates": {
+            "mobile": [243.43, 251.69],
+        },
         "rate": 8
     },
     {
@@ -1205,6 +1457,9 @@ export const targets = [
             19,
             20
         ],
+        "coordinates": {
+            "mobile": [170.57, 294.01],
+        },
         "rate": 8
     },
     {
@@ -1216,6 +1471,9 @@ export const targets = [
             20,
             21
         ],
+        "coordinates": {
+            "mobile": [243.44, 294.01],
+        },
         "rate": 8
     },
     {
@@ -1227,6 +1485,9 @@ export const targets = [
             22,
             23
         ],
+        "coordinates": {
+            "mobile": [170.58, 336.41],
+        },
         "rate": 8
     },
     {
@@ -1238,6 +1499,9 @@ export const targets = [
             23,
             24
         ],
+        "coordinates": {
+            "mobile": [243.45, 336.41],
+        },
         "rate": 8
     },
     {
@@ -1249,6 +1513,9 @@ export const targets = [
             25,
             26
         ],
+        "coordinates": {
+            "mobile": [170.58, 378.74],
+        },
         "rate": 8
     },
     {
@@ -1260,6 +1527,9 @@ export const targets = [
             26,
             27
         ],
+        "coordinates": {
+            "mobile": [243.45, 378.74],
+        },
         "rate": 8
     },
     {
@@ -1271,6 +1541,9 @@ export const targets = [
             28,
             29
         ],
+        "coordinates": {
+            "mobile": [170.61, 421.14],
+        },
         "rate": 8
     },
     {
@@ -1282,6 +1555,9 @@ export const targets = [
             29,
             30
         ],
+        "coordinates": {
+            "mobile": [243.43, 421.14],
+        },
         "rate": 8
     },
     {
@@ -1293,6 +1569,9 @@ export const targets = [
             31,
             32
         ],
+        "coordinates": {
+            "mobile": [170.61, 463.48],
+        },
         "rate": 8
     },
     {
@@ -1304,6 +1583,9 @@ export const targets = [
             32,
             33
         ],
+        "coordinates": {
+            "mobile": [243.43, 463.48],
+        },
         "rate": 8
     },
     {
@@ -1315,6 +1597,9 @@ export const targets = [
             34,
             35
         ],
+        "coordinates": {
+            "mobile": [170.59, 505.86],
+        },
         "rate": 8
     },
     {
@@ -1326,6 +1611,9 @@ export const targets = [
             35,
             36
         ],
+        "coordinates": {
+            "mobile": [243.43, 505.86],
+        },
         "rate": 8
     },
     {
@@ -1339,6 +1627,9 @@ export const targets = [
             5,
             6
         ],
+        "coordinates": {
+            "mobile": [97.81, 82.00],
+        },
         "rate": 5
     },
     {
@@ -1352,6 +1643,9 @@ export const targets = [
             8,
             9
         ],
+        "coordinates": {
+            "mobile": [97.76, 125.07],
+        },
         "rate": 5
     },
     {
@@ -1365,6 +1659,9 @@ export const targets = [
             11,
             12
         ],
+        "coordinates": {
+            "mobile": [97.81, 167.02],
+        },
         "rate": 5
     },
     {
@@ -1378,6 +1675,9 @@ export const targets = [
             14,
             15
         ],
+        "coordinates": {
+            "mobile": [97.81, 209.17],
+        },
         "rate": 5
     },
     {
@@ -1391,6 +1691,9 @@ export const targets = [
             17,
             18
         ],
+        "coordinates": {
+            "mobile": [97.81, 251.66],
+        },
         "rate": 5
     },
     {
@@ -1404,6 +1707,9 @@ export const targets = [
             20,
             21
         ],
+        "coordinates": {
+            "mobile": [97.81, 293.99],
+        },
         "rate": 5
     },
     {
@@ -1417,6 +1723,9 @@ export const targets = [
             23,
             24
         ],
+        "coordinates": {
+            "mobile": [97.81, 336.34],
+        },
         "rate": 5
     },
     {
@@ -1430,6 +1739,9 @@ export const targets = [
             26,
             27
         ],
+        "coordinates": {
+            "mobile": [97.81, 378.83],
+        },
         "rate": 5
     },
     {
@@ -1443,6 +1755,9 @@ export const targets = [
             29,
             30
         ],
+        "coordinates": {
+            "mobile": [97.81, 421.12],
+        },
         "rate": 5
     },
     {
@@ -1456,6 +1771,9 @@ export const targets = [
             32,
             33
         ],
+        "coordinates": {
+            "mobile": [97.81, 463.44],
+        },
         "rate": 5
     },
     {
@@ -1469,6 +1787,9 @@ export const targets = [
             35,
             36
         ],
+        "coordinates": {
+            "mobile": [97.81, 505.87],
+        },
         "rate": 5
     },
     {
@@ -1489,7 +1810,7 @@ export const targets = [
             34
         ],
         "coordinates": {
-            "mobile": [115.36, 545.77],
+            "mobile": [135.36, 565.77],
         },
         "rate": 2
     },
@@ -1511,7 +1832,7 @@ export const targets = [
             35
         ],
         "coordinates": {
-            "mobile": [187.36, 545.77],
+            "mobile": [207.36, 565.77],
         },
         "rate": 2
     },
@@ -1533,7 +1854,7 @@ export const targets = [
             36
         ],
         "coordinates": {
-            "mobile": [260.36, 545.77],
+            "mobile": [280.36, 565.77],
         },
         "rate": 2
     },
@@ -1555,7 +1876,7 @@ export const targets = [
             12
         ],
         "coordinates": {
-            "mobile": [53.02, 105.07],
+            "mobile": [73.02, 125.07],
         },
         "rate": 2
     },
@@ -1577,7 +1898,7 @@ export const targets = [
             24
         ],
         "coordinates": {
-            "mobile": [53.02, 274.07],
+            "mobile": [73.02, 294.07],
         },
         "rate": 2
     },
@@ -1599,7 +1920,7 @@ export const targets = [
             36
         ],
         "coordinates": {
-            "mobile": [53.02, 443.26],
+            "mobile": [73.02, 463.26],
         },
         "rate": 2
     },
@@ -1627,7 +1948,7 @@ export const targets = [
             36
         ],
         "coordinates": {
-            "mobile": [4.74, 231.72],
+            "mobile": [24.74, 251.72],
         },
         "rate": 1
     },
@@ -1655,7 +1976,7 @@ export const targets = [
             35
         ],
         "coordinates": {
-            "mobile": [4.74, 316.41],
+            "mobile": [24.74, 336.41],
         },
         "rate": 1
     },
@@ -1683,7 +2004,7 @@ export const targets = [
             35
         ],
         "coordinates": {
-            "mobile": [4.74, 400.91],
+            "mobile": [24.74, 420.91],
         },
         "rate": 1
     },
@@ -1711,7 +2032,7 @@ export const targets = [
             36
         ],
         "coordinates": {
-            "mobile": [4.74, 147.02],
+            "mobile": [24.74, 167.02],
         },
         "rate": 1
     },
@@ -1739,7 +2060,7 @@ export const targets = [
             18
         ],
         "coordinates": {
-            "mobile": [4.74, 485.81],
+            "mobile": [24.74, 82.81],
         },
         "rate": 1
     },
@@ -1767,7 +2088,7 @@ export const targets = [
             36
         ],
         "coordinates": {
-            "mobile": [4.74, 62.32],
+            "mobile": [24.74, 505.81],
         },
         "rate": 1
     },

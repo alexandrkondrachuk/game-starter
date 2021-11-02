@@ -170,6 +170,10 @@ const config = {
         }
     },
     targets,
+    chip: {
+        width: 30,
+        height: 30,
+    }
 };
 
 export default config;

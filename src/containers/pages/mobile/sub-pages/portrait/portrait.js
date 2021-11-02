@@ -15,7 +15,7 @@ import './portrait.scss';
 
 const Portrait = () => {
     const roundStage = useSelector((state) => (_.get(state, 'game.roundState.stage')));
-    const isOpen = roundStageEnum.get(roundStage).value === roundStageEnum.get(2).value;
+    const isOpen = roundStageEnum?.get(roundStage)?.value === roundStageEnum?.get(2)?.value;
 
     return (
         <div className="Portrait">

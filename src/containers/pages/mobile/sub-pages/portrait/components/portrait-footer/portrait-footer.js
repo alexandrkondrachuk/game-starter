@@ -17,12 +17,12 @@ const PortraitFooter = () => {
     return (
         <div className="PortraitFooter">
             <div className="Footer__Message">
-                Footer Message
+                <br/>
             </div>
             <div className="Footer__RoundInfo">
                 <div className="Footer__RoundInfo__Limits">
                     <span className="name">
-                        {'Roulette'}
+                        {'City Roulette'}
                     </span>
                     &nbsp;
                     <span className="limits">

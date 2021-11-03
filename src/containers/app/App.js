@@ -9,7 +9,7 @@ function App() {
     return (
         <div className="App">
             <section className="route-section">
-                <Router>
+                <Router basename={'CityRoulette/'}>
                     <Switch>
                         {routes.map((route) => (
                             <RouteWithSubRoutes key={route.id} {...route} />

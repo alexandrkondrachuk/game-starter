@@ -4,7 +4,7 @@ import './portrait-short-statistic.scss';
 const PortraitShortStatistic = () => {
     return (
         <div className="PortraitShortStatistic">
-            Short Statistic
+            Statistic
         </div>
     );
 };

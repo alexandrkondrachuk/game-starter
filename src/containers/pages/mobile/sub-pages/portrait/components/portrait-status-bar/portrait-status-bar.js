@@ -12,6 +12,23 @@ const PortraitStatusBar = () => {
     const totalBet = useSelector((state) => (_.get(state, 'game.player.totalBetOfCurrentRound')))
     const currency = useSelector((state) => (_.get(state, 'game.player.currency')))
     const currencySymbol = getSymbolFromCurrency(currency);
+    const roundStage = useSelector((state) => (_.get(state, 'game.roundState.stage')))
+    const luckyNumber = useSelector((state) => (_.get(state, 'game.roundState.winNumber.luckyNumber')))
+    const color = useSelector((state) => (_.get(state, 'game.roundState.color')))
+
+    const getRoundStage = () => {
+        if (roundStage == 2 || roundStage == 5) {
+            return 'Bet'
+        }
+
+        if (roundStage == 3) {
+            return 'Spin'
+        }
+
+        if (roundStage == 4) {
+            return 'Win number ' + luckyNumber + ' ' + color
+        }
+    };
 
     return (
         <div className="PortraitStatusBar">
@@ -32,7 +49,7 @@ const PortraitStatusBar = () => {
                 </div>
             </div>
             <div className="PortraitStatusBar__Status__Round">
-                Round Status
+                {getRoundStage()}
             </div>
         </div>
     );

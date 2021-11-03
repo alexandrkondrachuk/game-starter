@@ -1,0 +1,17 @@
+@keyframes pulse-click-icon {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.ClickIcon {
+  width: 140px;
+  height: 140px;
+  animation: pulse-click-icon 2s infinite;
+}

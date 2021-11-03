@@ -5,13 +5,14 @@ const domain = 'https://product.nextgenplay.tk';
 const dataPoint = 'Roulette';
 
 const config = {
-    name: 'Roulette',
+    name: 'City Roulette',
     version: '1.0.0',
+    playerInitDelay: 3500,
     server: {
         host: `${domain}:${port}`,
         url: `${domain}:${port}/${dataPoint}`,
         params: {
-            productId: 'NGPRoulette',
+            productId: 'NGP_Roulette',
             serviceCode: 'ngppitboss',
         },
     },

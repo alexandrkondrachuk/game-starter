@@ -1,10 +1,28 @@
 import React from 'react';
 import './minimal-mask.scss';
+import * as _ from 'lodash';
+import { useSelector } from 'react-redux';
+import ScrollIcon from '../icons/scroll-icon';
 
 const MinimalMask = () => {
+
+    const playerInstance = useSelector((state) => (_.get(state, 'stream.playerInstance', null)));
+
+    const enableSound = () => {
+        if (playerInstance) {
+            playerInstance.unmute();
+            playerInstance.setVolume(1);
+        }
+    };
+
     return (
-        <div className="MinimalMask">
-            <h2>"Swipe Up!"</h2>
+        <div className="MinimalMask" onClick={enableSound}>
+            <div className="minimal-ui-mask-icon">
+                <ScrollIcon />
+            </div>
+            <div className="minimal-ui-mask-title">
+                Tap and swipe Up to play
+            </div>
         </div>
     );
 };

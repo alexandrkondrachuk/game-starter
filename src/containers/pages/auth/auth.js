@@ -10,7 +10,7 @@ const Auth = () => {
     return (
         <div className="Auth">
             <CustomRedirect url={config.get('apiURLs.home')} isRedirectStatus={readyState} />
-            <h1>Auth Page</h1>
+            <h1>City Roulette</h1>
         </div>
     );
 };

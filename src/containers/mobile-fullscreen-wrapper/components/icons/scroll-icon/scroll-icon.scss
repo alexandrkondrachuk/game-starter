@@ -1,0 +1,17 @@
+@keyframes pulse-slide-icon {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -15px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.ScrollIcon {
+  width: 140px;
+  height: 140px;
+  animation: pulse-slide-icon 2s infinite;
+}

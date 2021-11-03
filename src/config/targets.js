@@ -1309,6 +1309,20 @@ export const targets = [
         "rate": 11
     },
     {
+        "key": "CRNR.0.1.2.3",
+        "groupId": 5,
+        "cells": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "coordinates": {
+            "mobile": [97.81, 39.78],
+        },
+        "rate": 11
+    },
+    {
         "key": "CRNR.1.2.4.5",
         "groupId": 5,
         "cells": [

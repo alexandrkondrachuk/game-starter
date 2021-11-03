@@ -5,7 +5,7 @@ const domain = 'https://product.nextgenplay.tk';
 const dataPoint = 'Roulette';
 
 const config = {
-    name: 'City Roulette',
+    name: 'City Roulette Live',
     version: '1.0.0',
     playerInitDelay: 3500,
     server: {
@@ -33,7 +33,7 @@ const config = {
                     "label": "1080p",
                     "tag": "",
                     "info": {
-                        "bitrate": 3000,
+                        "bitrate": 4500,
                         "width": 1920,
                         "height": 1080,
                         "framerate": 30

@@ -18,10 +18,14 @@ function PortraitBetPanel() {
     const roundStage = useSelector((state) => (_.get(state, 'game.roundState.stage')));
     const isOpen = roundStageEnum?.get(roundStage)?.value === roundStageEnum?.get(2)?.value;
     const totalBets = useSelector((state) => (_.get(state, 'game.player.totalBets', [])));
+    const luckyNumber = useSelector((state) => (_.get(state, 'game.roundState.winNumber.luckyNumber', '')));
+    const isResult = roundStageEnum?.get(roundStage)?.value === roundStageEnum?.get(4)?.value;
+
     const getChipCoordinates = (key) => {
         const target = targets.find((target) => (target.key === key));
         return _.get(target, 'coordinates.mobile', [0, 0]);
     };
+
     const getChipColor = (nominal) => {
         let color = 'orange';
         chips.forEach((chip) => {
@@ -29,6 +33,7 @@ function PortraitBetPanel() {
         });
         return color;
     };
+
     const renderChips = () => {
         const totalBetsWithCoordinates = totalBets.map((bet) => ({
             ...bet,
@@ -42,8 +47,27 @@ function PortraitBetPanel() {
                 data-target={bet.key}
                 transform={`translate(${bet.coordinates[0] - chip.width / 2}, ${bet.coordinates[1] - chip.height / 2})`}
             >
-                <Chip nominal={_.get(bet, 'betValue', 0)} width={chip.width} height={chip.height} color={_.get(bet, 'color', 'orange')}/>
+                <Chip nominal={_.get(bet, 'betValue', 0)} width={chip.width} height={chip.height}
+                      color={_.get(bet, 'color', 'orange')}/>
             </g>));
+    };
+    const renderPointer = () => {
+        if (!isResult || !luckyNumber) return  null;
+
+        const activeTarget = targets.find((target) => (target.key === `NMBR.${luckyNumber}`));
+        const coordinates = _.get(activeTarget, 'coordinates.mobile', [0,0]);
+        const pointer = config.get('pointer');
+        const pointerCoordinates = [(coordinates[0] - pointer.width / 2), (coordinates[1] - pointer.height / 2)];
+
+        return (
+            <g className="pointer" transform={`translate(${pointerCoordinates[0]}, ${pointerCoordinates[1]})`} fill={pointer.fill}>
+                <rect width="14" height="14" x="25" y="2" rx="2" ry="2"/>
+                <rect width="14" height="14" x="25" y="48" rx="2" ry="2"/>
+                <rect width="14" height="14" x="2" y="25" rx="2" ry="2"/>
+                <rect width="14" height="14" x="48" y="25" rx="2" ry="2"/>
+                <path d="M55.86 41h-4.33A21.49 21.49 0 0141 51.53v4.33A25.46 25.46 0 0055.86 41zM23 12.47V8.14A25.46 25.46 0 008.14 23h4.33A21.49 21.49 0 0123 12.47zM23 55.86v-4.33A21.49 21.49 0 0112.47 41H8.14A25.46 25.46 0 0023 55.86zM51.53 23h4.33A25.46 25.46 0 0041 8.14v4.33A21.49 21.49 0 0151.53 23z"/>
+            </g>
+        );
     };
 
     const doBet = (Code) => {
@@ -864,6 +888,7 @@ function PortraitBetPanel() {
                         fillOpacity={0}
                         onClick={() => doBet(target.key)}
                     />))}
+                {renderPointer()}
             </g>
         </svg>
     );

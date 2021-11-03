@@ -1,3 +1,15 @@
+@keyframes pulse-pointer {
+  0% {
+    fill: var(--primary);
+  }
+  50% {
+    fill: var(--yellow);
+  }
+  100% {
+    fill: var(--primary);
+  }
+}
+
 .PortraitBetPanel {
   padding: 10px;
   position: absolute;
@@ -129,5 +141,11 @@
 
   .Chip {
     pointer-events: none;
+  }
+
+  .pointer {
+    animation-name: pulse-pointer;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
   }
 }

@@ -1,0 +1,53 @@
+.PortraitRoundResult {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 10;
+  transform: translate3d(0, -50%, 0);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.25) 20%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0.25) 80%, rgba(0, 0, 0, 0.15) 100%);
+
+  .trapezoid {
+    border-top: 40px solid var(--gray);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    height: 0;
+    width: 60px;
+    opacity: 0.9;
+
+    &.Red {
+      border-top: 40px solid #de2201;
+    }
+
+    &.Black {
+      border-top: 40px solid #1a1a1a;
+    }
+
+    &.Green {
+      border-top: 40px solid #149d2a;
+    }
+  }
+
+  .Number {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    transform: translate3d(-50%, -50%, 0);
+    font-family: var(--font-family-sans-serif);
+    font-size: 1.25rem;
+    line-height: 1.25;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.6);
+    color: var(--white);
+  }
+}

@@ -174,6 +174,11 @@ const config = {
     chip: {
         width: 30,
         height: 30,
+    },
+    pointer: {
+        width: 64,
+        height: 64,
+        fill: '#fbdc01',
     }
 };
 

@@ -47,6 +47,7 @@
   .Content {
 
     &__Stream {
+      position: relative;
       width: 100%;
       height: $videoHeight;
     }

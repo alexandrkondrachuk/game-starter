@@ -2,12 +2,12 @@ import React from 'react';
 import './portrait-status-bar.scss';
 import getSymbolFromCurrency from 'currency-symbol-map';
 import * as _ from 'lodash';
+import * as cn from 'classnames';
 import { useSelector } from 'react-redux';
-//import PlayerModel from '../../../../../../../models/player/player';
-//import RouletteRoundModel from '../../../../../../../models/roulette-round/roulette-round';
+import { roundStageEnum } from '../../../../../../../enums';
+import PortraitTimer from '../portrait-timer';
 
 const PortraitStatusBar = () => {
-    
     const balance = useSelector((state) => (_.get(state, 'game.player.balance')))
     const totalBet = useSelector((state) => (_.get(state, 'game.player.totalBetOfCurrentRound')))
     const currency = useSelector((state) => (_.get(state, 'game.player.currency')))
@@ -15,20 +15,15 @@ const PortraitStatusBar = () => {
     const roundStage = useSelector((state) => (_.get(state, 'game.roundState.stage')))
     const luckyNumber = useSelector((state) => (_.get(state, 'game.roundState.winNumber.luckyNumber')))
     const color = useSelector((state) => (_.get(state, 'game.roundState.color')))
-
-    const getRoundStage = () => {
-        if (roundStage == 2 || roundStage == 5) {
-            return 'Bet'
-        }
-
-        if (roundStage == 3) {
-            return 'Spin'
-        }
-
-        if (roundStage == 4) {
-            return 'Win number ' + luckyNumber + ' ' + color
-        }
+    const roundAppearance = {
+        [roundStageEnum.get(2).value]: { text: 'Place your bets please', stageClass: 'green' },
+        [roundStageEnum.get(3).value]: { text: 'No more bets', stageClass: 'red' },
+        [roundStageEnum.get(4).value]: { text: 'Win number', stageClass: 'gray' },
+        [roundStageEnum.get(5).value]: { text: 'Place your bets please', stageClass: 'green' },
     };
+    const renderRoundText = () => (
+        <span className="round-status">{_.get(roundAppearance, `${roundStage}.text`, '')}</span>
+    );
 
     return (
         <div className="PortraitStatusBar">
@@ -48,8 +43,10 @@ const PortraitStatusBar = () => {
                     </div>
                 </div>
             </div>
-            <div className="PortraitStatusBar__Status__Round">
-                {getRoundStage()}
+            <div className={cn("PortraitStatusBar__Status__Round", {[_.get(roundAppearance, `${roundStage}.stageClass`, 'default')]: true})}>
+                {renderRoundText()}
+                {roundStageEnum.get(2).value === roundStage && <PortraitTimer />}
+                {roundStageEnum.get(4).value === roundStage && <span className="luckyNumber">{ luckyNumber }&nbsp;{ color }</span>}
             </div>
         </div>
     );

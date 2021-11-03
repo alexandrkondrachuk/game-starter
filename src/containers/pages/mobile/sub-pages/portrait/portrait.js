@@ -10,6 +10,7 @@ import {
     PortraitShortStatistic,
     PortraitContentMenu,
     PortraitFooter,
+    PortraitRoundResult,
 } from './components';
 import './portrait.scss';
 
@@ -28,6 +29,7 @@ const Portrait = () => {
             <div className="Portrait__Content">
                 <div className="Content__Stream">
                     <WebrtcPlayer />
+                    <PortraitRoundResult />
                 </div>
                 <div className={cn('Content__BetPanel', { open: isOpen })}>
                     <PortraitBetPanel />

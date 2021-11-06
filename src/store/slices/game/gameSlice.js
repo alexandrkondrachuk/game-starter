@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { betPanelEnum } from '../../../enums';
 import { CurrencyModel, PlayerModel, RoundStateModel, RouletteStatModel } from '../../../models';
 
 const gameSlice = createSlice({
@@ -15,6 +16,7 @@ const gameSlice = createSlice({
         rouletteStat: null,
         limits: null,
         win: 0,
+        mobileBetPanelType: betPanelEnum.get('panel').key,
     },
     reducers: {
         setReadyState(state, action) {
@@ -54,6 +56,9 @@ const gameSlice = createSlice({
         setWin(state, action) {
             state.win = action.payload;
         },
+        setMobileBetType(state, action) {
+            state.mobileBetPanelType = action.payload;
+        },
     },
 });
 
@@ -70,5 +75,6 @@ export const {
     setRouletteStat,
     setLimits,
     setWin,
+    setMobileBetType,
 } = gameSlice.actions;
 export const { name } = gameSlice;

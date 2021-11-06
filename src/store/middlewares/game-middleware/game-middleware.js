@@ -1,6 +1,6 @@
-import { roundStageEnum } from '../../../enums';
+import { roundStageEnum, betPanelEnum } from '../../../enums';
 import { resetBetsList, setChipsList } from '../../slices/bet/betSlice';
-import { setWin } from '../../slices/game/gameSlice';
+import { setWin, setMobileBetType } from '../../slices/game/gameSlice';
 
 export const gameMiddleware = (store) => (next) => (action) => {
     switch (action.type) {
@@ -9,6 +9,9 @@ export const gameMiddleware = (store) => (next) => (action) => {
         case 'game/setEndBetting':
             if(action?.payload?.stage === roundStageEnum.get(4)?.value) store.dispatch(resetBetsList());
             if(action?.payload?.stage === roundStageEnum.get(2)?.value) store.dispatch(setWin(0));
+            if ([roundStageEnum.get(3)?.value, roundStageEnum.get(4)?.value].includes(action?.payload?.stage)) {
+                store.dispatch(setMobileBetType(betPanelEnum.get('panel').key));
+            }
             break;
         case 'game/setCurrency':
             const {

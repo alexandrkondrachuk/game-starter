@@ -1,4 +1,5 @@
 import { targets } from './targets';
+import { racetrackTargets } from './racetrack-targets';
 
 const port = 5003;
 const domain = 'https://product.nextgenplay.tk';
@@ -171,6 +172,7 @@ const config = {
         }
     },
     targets,
+    racetrackTargets,
     chip: {
         width: 30,
         height: 30,

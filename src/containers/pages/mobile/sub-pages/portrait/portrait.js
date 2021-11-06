@@ -5,18 +5,19 @@ import WebrtcPlayer from '../../../../webrtc-player';
 import { useSelector } from 'react-redux';
 import { roundStageEnum } from '../../../../../enums';
 import {
-    PortraitBetPanel,
     PortraitStatusBar,
     PortraitShortStatistic,
     PortraitContentMenu,
     PortraitFooter,
     PortraitRoundResult,
+    PortraitBetSwitcher,
 } from './components';
 import './portrait.scss';
 import MobileMenu from '../../menu';
 
 const Portrait = () => {
     const roundStage = useSelector((state) => (_.get(state, 'game.roundState.stage')));
+    const mobileBetPanelType = useSelector((state) => (_.get(state, 'game.mobileBetPanelType')));
     const isOpen = roundStageEnum?.get(roundStage)?.value === roundStageEnum?.get(2)?.value;
 
     return (
@@ -34,7 +35,7 @@ const Portrait = () => {
                     <PortraitRoundResult />
                 </div>
                 <div className={cn('Content__BetPanel', { open: isOpen })}>
-                    <PortraitBetPanel />
+                    <PortraitBetSwitcher type={mobileBetPanelType} />
                 </div>
                 <div className="Content__Menu">
                     <PortraitContentMenu />

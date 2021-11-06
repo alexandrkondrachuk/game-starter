@@ -15,6 +15,8 @@ const betSlice = createSlice({
             new ChipModel({ id: 5, nominal: 10000, color: 'purple', active: false }),
         ],
         isMobileBetChipOpen: true,
+        neighboursAmount: 1,
+        neighboursLimit: [1, 9],
     },
     reducers: {
         addItemToPlacedBetsList(state, action) {
@@ -38,6 +40,13 @@ const betSlice = createSlice({
         },
         toggleMobileChip(state) {
             state.isMobileBetChipOpen = !state.isMobileBetChipOpen;
+        },
+        setNeighboursAmount(state, action) {
+            const { neighboursLimit } = state;
+            const { payload: amount } = action;
+            let nextValue = amount <= neighboursLimit[0] ? neighboursLimit[0] : amount;
+            nextValue = nextValue >= neighboursLimit[1] ? neighboursLimit[1] : nextValue;
+            state.neighboursAmount = nextValue;
         }
     },
 });
@@ -50,5 +59,6 @@ export const {
     setChipsList,
     setActiveChip,
     toggleMobileChip,
+    setNeighboursAmount,
 } = betSlice.actions;
 export const { name } = betSlice;

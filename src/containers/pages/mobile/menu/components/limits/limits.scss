@@ -1,0 +1,126 @@
+@import "~bootstrap/scss/functions";
+@import "../../../../../../../assets/scss/utilities/variables";
+@import "~bootstrap/scss/mixins/breakpoints";
+@import "../../../../../../../assets/scss/utilities/functions";
+
+.Limits__Mobile {
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  &__Header {
+    margin-bottom: 8px;
+    padding: 4px 8px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--gray);
+  }
+
+  .Header {
+    &__Icon {
+      padding-right: 8px;
+
+      svg {
+        width: 1.25em;
+        height: 1.25em;
+        fill: var(--white);
+      }
+    }
+
+    &__Text {
+      font-size: 0.75em;
+      font-family: var(--font-family-sans-serif);
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+      text-transform: uppercase;
+      color: var(--white);
+    }
+  }
+
+  &__Body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Body__Main {
+    padding: 8px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 0.9em;
+    font-family: var(--font-family-sans-serif);
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    color: var(--white);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .Body__Table {
+    padding: 8px;
+    width: 100%;
+    display: flex;
+  }
+
+  .Table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.7em;
+    font-family: var(--font-family-sans-serif);
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+    color: var(--white);
+  }
+
+  .Tr {
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+
+    &:last-of-type {
+      margin-top: 16px;
+    }
+  }
+
+  .Th {
+    background-color: rgba(255, 255, 255, 0.45);
+  }
+
+  .Th, .Td {
+    padding: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.left {
+      justify-content: flex-start;
+    }
+
+    &.right {
+      justify-content: flex-end;
+    }
+
+    &.lg {
+      flex: 116px 0;
+      flex-shrink: 0;
+    }
+
+  }
+
+  .font-color-yellow {
+    color: var(--yellow);
+  }
+}

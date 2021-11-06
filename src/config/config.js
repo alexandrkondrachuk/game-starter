@@ -33,7 +33,7 @@ const config = {
                     "label": "1080p",
                     "tag": "",
                     "info": {
-                        "bitrate": 4500,
+                        "bitrate": 3000,
                         "width": 1920,
                         "height": 1080,
                         "framerate": 30
@@ -179,7 +179,14 @@ const config = {
         width: 64,
         height: 64,
         fill: '#fbdc01',
-    }
+    },
+    menuResetDelay: 400,
+    animationDuration: {
+        settings: 500,
+        limits: 500,
+        chatMessage: 400,
+        menuItem: 1000,
+    },
 };
 
 export default config;

@@ -13,13 +13,15 @@ import {
     PortraitRoundResult,
 } from './components';
 import './portrait.scss';
+import MobileMenu from '../../menu';
 
 const Portrait = () => {
     const roundStage = useSelector((state) => (_.get(state, 'game.roundState.stage')));
     const isOpen = roundStageEnum?.get(roundStage)?.value === roundStageEnum?.get(2)?.value;
 
     return (
-        <div className="Portrait">
+        <div className="Portrait" id="Portrait">
+            <MobileMenu pageWrapId="Portrait" outerContainerId="Mobile" />
             <div className="Portrait__StatusBar">
                 <PortraitStatusBar />
             </div>

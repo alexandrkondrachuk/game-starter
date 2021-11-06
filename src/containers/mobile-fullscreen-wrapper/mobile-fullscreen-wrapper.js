@@ -18,7 +18,7 @@ const MobileFullscreenWrapper = ({ children }) => {
     const enableSound = () => {
         if (playerInstance) {
             playerInstance.unmute();
-            playerInstance.setVolume(1);
+            //playerInstance.setVolume(1);
         }
     };
 
@@ -27,7 +27,7 @@ const MobileFullscreenWrapper = ({ children }) => {
         <div
             className="app-mask"
             onClick={() => {
-                _.delay(() => { enableSound(); }, 3500);
+                enableSound();
                 setAppMaskStatus(false);
             }}
         >
@@ -35,7 +35,7 @@ const MobileFullscreenWrapper = ({ children }) => {
                 <ClickIcon />
             </div>
             <div className="app-mask-title">
-                Click to play PM
+                Click to play
             </div>
         </div>
     );

@@ -11,7 +11,7 @@ const NativeMask = () => {
     const enableSound = () => {
         if (playerInstance) {
             playerInstance.unmute();
-            playerInstance.setVolume(1);
+            //playerInstance.setVolume(1);
         }
     };
 

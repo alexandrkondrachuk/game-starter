@@ -18,6 +18,9 @@ import {
     addItemToPlacedBetsList,
     removeItemFromPlacedBetsList,
 } from '../store/slices/bet/betSlice';
+import {
+    addChatMessage,
+} from '../store/slices/chat/chatSlice';
 
 const incomingMessages = Types.API__INCOMING__MESSAGES;
 
@@ -36,9 +39,7 @@ export default class Api {
         };
 
         this.connection = new signalR.HubConnectionBuilder()
-            .configureLogging(signalR.LogLevel.Debug)
             .withUrl(this.url, this.options)
-            .configureLogging(signalR.LogLevel.Information)
             .withAutomaticReconnect()
             .build();
 
@@ -93,7 +94,7 @@ export default class Api {
 
     onUndoBetPlaced = (data) => store.dispatch(removeItemFromPlacedBetsList(data));
 
-    onChatUserMessage = (data) => console.log('onChatUserMessage', data);
+    onChatUserMessage = (data) => store.dispatch(addChatMessage(data));
 
     onCurrency = (data) => store.dispatch(setCurrency(data));
 

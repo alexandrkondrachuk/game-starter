@@ -33,7 +33,6 @@ const PortraitContentMenu = () => {
             <div className="PortraitContentMenu__Section third">
                 <ButtonWithIcon icon="auto" />
                 <ButtonWithIcon icon="racetrack" />
-                <ButtonWithIcon icon="menu" />
             </div>
         </div>
     );

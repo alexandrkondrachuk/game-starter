@@ -12,8 +12,6 @@ import HelpIconSvg from './help';
 import RepeatIconSvg from './repeat';
 import DoubleIconSvg from './double';
 import UndoIconSvg from './undo';
-import PlayerIconSvg from './player';
-import BankerIconSvg from './banker';
 import FullScreenOff from './full-screen-off';
 import FullScreenOn from './full-screen-on';
 import LimitsIconSvg from './limits';
@@ -34,8 +32,6 @@ export {
     RepeatIconSvg,
     DoubleIconSvg,
     UndoIconSvg,
-    PlayerIconSvg,
-    BankerIconSvg,
     FullScreenOff,
     FullScreenOn,
     LimitsIconSvg,

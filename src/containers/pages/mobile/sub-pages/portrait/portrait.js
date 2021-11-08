@@ -14,6 +14,8 @@ import {
 } from './components';
 import './portrait.scss';
 import MobileMenu from '../../menu';
+import { Icon } from '../../../../../components/svg-components';
+import Fab from '@material-ui/core/Fab';
 
 const Portrait = () => {
     const roundStage = useSelector((state) => (_.get(state, 'game.roundState.stage')));

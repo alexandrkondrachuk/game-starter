@@ -16,7 +16,7 @@ const MinimalMask = () => {
     };
 
     return (
-        <div className="MinimalMask" onClick={enableSound}>
+        <div className="MinimalMask">
             <div className="minimal-ui-mask-icon">
                 <ScrollIcon />
             </div>

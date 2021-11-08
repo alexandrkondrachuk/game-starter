@@ -12,7 +12,7 @@
   text-align: center;
   font-size: 12px;
   color: var(--white);
-  background: linear-gradient(45deg, grey 10%, #212529 45%, #000 100%);
+  background: linear-gradient(to bottom, #000 40%, #2e0600 55%, #5a5a5a 100%);
 
   &__StatusBar {
     width: 100%;
@@ -59,10 +59,17 @@
       z-index: 11;
       width: calc(100% - 50px);
       height: calc(100% - calc(100vw / 1.7777));
-      transition: height 0.65s linear;
+      transition: height 0.2s linear;
       &.open {
         height: 100%;
       }
+    }
+
+    &__ToggleDealerVoice {
+      position: absolute;
+      bottom: 5px;
+      left: 15px;
+      z-index: 12;
     }
 
     &__Menu {

@@ -1,4 +1,19 @@
+@import "~bootstrap/scss/functions";
+@import "../../../assets/scss/utilities/variables";
+@import "~bootstrap/scss/mixins/breakpoints";
+@import "../../../assets/scss/utilities/functions";
+
 .Auth {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: #000 url("../../../assets/images/casino-online.jpg") no-repeat center center;
+
+  &:after {
+    content: '';
     width: 100%;
     height: 100vh;
     display: flex;
@@ -6,7 +21,64 @@
     z-index: 1;
     left: 0;
     right: 0;
-    background: #000 url("../../../assets/images/casino-online.jpg") no-repeat center center;
     background-size: cover;
     filter: brightness(0.45);
+  }
+
+  &__Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: inherit;
+    z-index: 2;
+    filter: unset;
+
+    h1 {
+      font-size: responseCalc(96px);
+      font-family: "Intro Base 2 Line", Roboto, Ubuntu, "Fira Sans", system-ui, -apple-system, sans-serif;
+      color: white;
+      background: -webkit-linear-gradient(#eee, #333);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      .primary {
+        color: var(--yellow);
+        background: -webkit-linear-gradient(var(--yellow), var(--dark));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .secondary {
+        color: var(--primary);
+        background: -webkit-linear-gradient(var(--primary), var(--dark));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      small {
+        font-family: "Intro Script Base", Roboto, Ubuntu, "Fira Sans", system-ui, -apple-system, sans-serif;
+        font-size: responseCalc(64px);
+        color: var(--cyan);
+        background: -webkit-linear-gradient(var(--cyan), var(--cyan));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+
+    h2 {
+      margin: 0 0 responseCalc(24px) 0;
+      font-size: responseCalc(32px);
+      font-family: "Intro HeadR Base", Roboto, Ubuntu, "Fira Sans", system-ui, -apple-system, sans-serif;
+      color: var(--white);
+    }
+
+    .css-1d9ls5a {
+      width: responseCalc(46px);
+      height: responseCalc(46px);
+    }
+  }
 }

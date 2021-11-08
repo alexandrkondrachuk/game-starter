@@ -1,1 +1,45 @@
-.PortraitShortStatistic {}
+.PortraitShortStatistic {
+    background: black;
+
+    .lastNumberRed {
+        width: 7%;
+        display:inline-block;
+        color: white;
+        border: 1px solid white;
+        background-color: #de2201;
+    }
+
+    .lastNumberBlack {
+        width: 7%;
+        display:inline-block;
+        color: white;
+        border: 1px solid white;
+        background-color: gray;
+    }
+
+    .lastNumberGreen {
+        width: 7%;
+        display:inline-block;
+        color: white;
+        border: 1px solid white;
+        background-color: green;
+    }
+
+    .Red {
+        width: 7%;
+        display:inline-block;
+        color: #de2201;
+    }
+
+    .Green {
+        width: 7%;
+        display:inline-block;
+        color: green;
+    }
+
+    .Black {
+        width: 7%;
+        display:inline-block;
+        color: white;
+    }
+}

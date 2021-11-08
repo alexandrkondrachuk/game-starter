@@ -17,7 +17,8 @@ export const loginMiddleware = (store) => (next) => (action) => {
         case 'game/setPlayer':
         case 'game/setCurrency':
         case 'game/setLimits':
-            store.dispatch(setReadyState(isReady));
+            _.delay(() => { store.dispatch(setReadyState(isReady)); }, 2000);
+            
             break;
         default:
             break;

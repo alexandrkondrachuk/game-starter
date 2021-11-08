@@ -18,7 +18,7 @@ const MobileFullscreenWrapper = ({ children }) => {
     const enableSound = () => {
         if (playerInstance) {
             playerInstance.unmute();
-            //playerInstance.setVolume(1);
+            playerInstance.setVolume(1);
         }
     };
 
@@ -27,7 +27,7 @@ const MobileFullscreenWrapper = ({ children }) => {
         <div
             className="app-mask"
             onClick={() => {
-                enableSound();
+                _.delay(() => { enableSound(); }, 3500);
                 setAppMaskStatus(false);
             }}
         >

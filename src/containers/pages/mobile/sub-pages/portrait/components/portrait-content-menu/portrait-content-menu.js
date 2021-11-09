@@ -6,12 +6,13 @@ import { useSelector, useDispatch } from 'react-redux';
 import * as _ from 'lodash';
 import Api from '../../../../../../../classes/Api';
 import { roundStageEnum, betPanelEnum } from '../../../../../../../enums';
-import { setMobileBetType } from '../../../../../../../store/slices/game/gameSlice';
+import { setBetPanelDown, setMobileBetType } from '../../../../../../../store/slices/game/gameSlice';
 
 const PortraitContentMenu = () => {
     const dispatch = useDispatch();
     const isMobileBetChipOpen = useSelector((state) => (_.get(state, 'bet.isMobileBetChipOpen', true)));
     const mobileBetPanelType = useSelector((state) => (_.get(state, 'game.mobileBetPanelType')));
+    const isBetPanelDown = useSelector((state) => (_.get(state, 'game.isBetPanelDown')));
     const roundStage = useSelector((state) => (_.get(state, 'game.roundState.stage')));
     const isOpen = roundStageEnum?.get(roundStage)?.value === roundStageEnum?.get(2)?.value;
 
@@ -38,12 +39,26 @@ const PortraitContentMenu = () => {
         dispatch(setMobileBetType(newType));
     }
 
+    const downBetPanel = () => {
+        const isDown = !!!isBetPanelDown;
+        dispatch(setBetPanelDown(isDown));
+    }
+
+    const switchToggleButton = () => {
+        if (isBetPanelDown === true) {
+            return 'toggleReverse';
+        }
+        else {
+            return 'toggle';
+        }
+    }
+
     return (
         <div className="PortraitContentMenu">
             <div className="PortraitContentMenu__Section first">
                 <ButtonWithIcon borderEnable={false}/>
                 <ButtonWithIcon icon="statistic" borderEnable={false} />
-                <ButtonWithIcon icon='toggle' borderEnable={false} />
+                <ButtonWithIcon icon={switchToggleButton()} isActive={isBetPanelDown} onClick={downBetPanel} borderEnable={false} />
             </div>
             <div className="PortraitContentMenu__Section second">
                 {isMobileBetChipOpen && <ButtonWithIcon icon='undo' onClick={() => doUndoBet()}/>}

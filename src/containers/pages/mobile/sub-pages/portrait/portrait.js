@@ -21,6 +21,7 @@ const Portrait = () => {
     const roundStage = useSelector((state) => (_.get(state, 'game.roundState.stage')));
     const mobileBetPanelType = useSelector((state) => (_.get(state, 'game.mobileBetPanelType')));
     const isOpen = roundStageEnum?.get(roundStage)?.value === roundStageEnum?.get(2)?.value;
+    const isBetPanelDown = useSelector((state) => (_.get(state, 'game.isBetPanelDown')));
 
     return (
         <div className="Portrait" id="Portrait">
@@ -36,7 +37,7 @@ const Portrait = () => {
                     <WebrtcPlayer />
                     <PortraitRoundResult />
                 </div>
-                <div className={cn('Content__BetPanel', { open: isOpen })}>
+                <div className={cn('Content__BetPanel', { open: isOpen }, { openDown: isBetPanelDown })}>
                     <PortraitBetSwitcher type={mobileBetPanelType} />
                 </div>
                 <div className="Content__Menu">

@@ -17,6 +17,7 @@ const gameSlice = createSlice({
         limits: null,
         win: 0,
         mobileBetPanelType: betPanelEnum.get('panel').key,
+        isBetPanelDown: false,
     },
     reducers: {
         setReadyState(state, action) {
@@ -59,6 +60,9 @@ const gameSlice = createSlice({
         setMobileBetType(state, action) {
             state.mobileBetPanelType = action.payload;
         },
+        setBetPanelDown(state, action) {
+            state.isBetPanelDown = action.payload;
+        },
     },
 });
 
@@ -76,5 +80,6 @@ export const {
     setLimits,
     setWin,
     setMobileBetType,
+    setBetPanelDown,
 } = gameSlice.actions;
 export const { name } = gameSlice;

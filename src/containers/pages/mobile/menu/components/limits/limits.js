@@ -1,23 +1,27 @@
 import React from 'react';
-import * as PropTypes from 'prop-types';
 import * as _ from 'lodash';
-import { connect } from 'react-redux';
+import { useSelector } from 'react-redux';
 import getSymbolFromCurrency from 'currency-symbol-map';
-import { Icon } from '../../../../../../../components/svg-components';
-import PlayerInfoModel from '../../../../../../../models/player-info-model';
-import CurrencyModel from '../../../../../../../models/currency-model';
-import config from '../../../../../../../config';
-import { number } from '../../../../../../../lang';
+import { Icon } from '../../../../../../components/svg-components';
 
 import './limits.scss';
 
-function Limits({
-    playerInfo, currencyModel,
-}) {
-    const { minBet, maxPlayerBankerBet, maxTiePairBet } = currencyModel;
-    const name = config.get('name', '').split(' ');
-    const currency = _.get(playerInfo, 'currency', config.get('currency'));
+const Limits = () => {
+
+    const currency = useSelector((state) => (_.get(state, 'game.player.currency')))
     const currencySymbol = getSymbolFromCurrency(currency);
+    const minBet = useSelector((state) => (_.get(state, 'game.currency.minBet')))
+    const nmbrLimit = useSelector((state) => (_.get(state, 'game.limits[0].limit')))
+    const spltLimit = useSelector((state) => (_.get(state, 'game.limits[1].limit')))
+    const strtLimit = useSelector((state) => (_.get(state, 'game.limits[2].limit')))
+    const crnrLimit = useSelector((state) => (_.get(state, 'game.limits[3].limit')))
+    const sxlnLimit = useSelector((state) => (_.get(state, 'game.limits[4].limit')))
+    const columnLimit = useSelector((state) => (_.get(state, 'game.limits[4].limit')))
+    const redLimit = useSelector((state) => (_.get(state, 'game.limits[5].limit')))
+    const oddLimit = useSelector((state) => (_.get(state, 'game.limits[7].limit')))
+    const lowLimit = useSelector((state) => (_.get(state, 'game.limits[9].limit')))
+    const dozenLimit = useSelector((state) => (_.get(state, 'game.limits[11].limit')))
+
     return (
         <div className="Limits__Mobile">
             <div className="Limits__Mobile__Header">
@@ -30,11 +34,11 @@ function Limits({
                         <span className="label">Table:</span>
                         {' '}
                         <span className="description">
-                            { _.get(name, '[0]', '') }
+                            { 'City' }
                             { ' ' }
-                            { _.get(name, '[1]', '') }
+                            { 'Roulette' }
                             { ' ' }
-                            { _.get(name, '[2]', '') }
+                            { 'Live' }
                             { ' ' }
                         </span>
                     </div>
@@ -43,9 +47,9 @@ function Limits({
                         {' '}
                         <span className="description font-color-yellow">
                             {currencySymbol}
-                            {number({ value: minBet })}
+                            {minBet}
                             { '-' }
-                            {number({ value: maxPlayerBankerBet })}
+                            {nmbrLimit}
                         </span>
                     </div>
                 </div>
@@ -57,64 +61,100 @@ function Limits({
                             <div className="Th right">Payout</div>
                         </div>
                         <div className="Tr">
-                            <div className="Td left">Player</div>
+                            <div className="Td left">STRAIGHT UP</div>
                             <div className="Td lg right font-color-yellow">
                                 {currencySymbol}
-                                {number({ value: minBet })}
+                                {minBet}
                                 { '-' }
-                                {number({ value: maxPlayerBankerBet })}
+                                {nmbrLimit}
                             </div>
-                            <div className="Td right">1:1</div>
+                            <div className="Td right">35:1</div>
                         </div>
                         <div className="Tr">
-                            <div className="Td left">Banker</div>
+                            <div className="Td left">SPLIT</div>
                             <div className="Td lg right font-color-yellow">
                                 {currencySymbol}
-                                {number({ value: minBet })}
+                                {minBet}
                                 { '-' }
-                                {number({ value: maxPlayerBankerBet })}
+                                {spltLimit}
                             </div>
-                            <div className="Td right">0.95:1</div>
+                            <div className="Td right">17:1</div>
                         </div>
                         <div className="Tr">
-                            <div className="Td left">Tie</div>
+                            <div className="Td left">STREET</div>
                             <div className="Td lg right font-color-yellow">
                                 {currencySymbol}
-                                {number({ value: minBet })}
+                                {minBet}
                                 { '-' }
-                                {number({ value: maxTiePairBet })}
+                                {strtLimit}
+                            </div>
+                            <div className="Td right">11:1</div>
+                        </div>
+                        <div className="Tr">
+                            <div className="Td left">CORNER</div>
+                            <div className="Td lg right font-color-yellow">
+                                {currencySymbol}
+                                {minBet}
+                                { '-' }
+                                {crnrLimit}
                             </div>
                             <div className="Td right">8:1</div>
                         </div>
                         <div className="Tr">
-                            <div className="Td left">P Pair / B Pair</div>
+                            <div className="Td left">SIX LINE</div>
                             <div className="Td lg right font-color-yellow">
                                 {currencySymbol}
-                                {number({ value: minBet })}
+                                {minBet}
                                 { '-' }
-                                {number({ value: maxTiePairBet })}
+                                {sxlnLimit}
                             </div>
-                            <div className="Td right">11:1</div>
+                            <div className="Td right">5:1</div>
+                        </div>
+                        <div className="Tr">
+                            <div className="Td left">COLUMNS/DOZENS</div>
+                            <div className="Td lg right font-color-yellow">
+                                {currencySymbol}
+                                {minBet}
+                                { '-' }
+                                {dozenLimit}
+                            </div>
+                            <div className="Td right">5:1</div>
+                        </div>
+                        <div className="Tr">
+                            <div className="Td left">RED/BLACK</div>
+                            <div className="Td lg right font-color-yellow">
+                                {currencySymbol}
+                                {minBet}
+                                { '-' }
+                                {redLimit}
+                            </div>
+                            <div className="Td right">5:1</div>
+                        </div>
+                        <div className="Tr">
+                            <div className="Td left">EVEN/ODD</div>
+                            <div className="Td lg right font-color-yellow">
+                                {currencySymbol}
+                                {minBet}
+                                { '-' }
+                                {oddLimit}
+                            </div>
+                            <div className="Td right">5:1</div>
+                        </div>
+                        <div className="Tr">
+                            <div className="Td left">1-18/19-36</div>
+                            <div className="Td lg right font-color-yellow">
+                                {currencySymbol}
+                                {minBet}
+                                { '-' }
+                                {lowLimit}
+                            </div>
+                            <div className="Td right">5:1</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    );
+    );   
 }
 
-Limits.propTypes = {
-    // dispatch: PropTypes.func.isRequired,
-    playerInfo: PropTypes.instanceOf(PlayerInfoModel).isRequired,
-    currencyModel: PropTypes.instanceOf(CurrencyModel).isRequired,
-};
-
-const mapStateToProps = (state) => {
-    const playerInfo = _.get(state, 'game.playerInfo');
-    const currencyModel = _.get(state, 'game.currency');
-    return { playerInfo, currencyModel };
-};
-
-const dispatchStateToProps = (dispatch) => ({ dispatch });
-
-export default connect(mapStateToProps, dispatchStateToProps)(Limits);
+export default Limits;

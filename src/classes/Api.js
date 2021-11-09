@@ -130,4 +130,12 @@ export default class Api {
     doSendChatMessage(message = '') {
         return this.connection.invoke('ChatUserMessage', message);
     }
+
+    doDoublingBets() {
+        return this.connection.invoke('DoublingBets');
+    }
+
+    doRepeatBets() {
+        return this.connection.invoke('RepeatBets');
+    }
 }

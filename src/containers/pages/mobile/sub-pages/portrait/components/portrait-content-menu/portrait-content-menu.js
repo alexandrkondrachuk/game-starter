@@ -21,6 +21,18 @@ const PortraitContentMenu = () => {
         }
     };
 
+    const doDoublingBets = () => {
+        if (Api.instance && isOpen) {
+            Api.instance.doDoublingBets();
+        }
+    };
+
+    const doRepeatBets = () => {
+        if (Api.instance && isOpen) {
+            Api.instance.doRepeatBets();
+        }
+    };
+
     const toggleBetPanel = () => {
         const newType = mobileBetPanelType === betPanelEnum.get('panel').key ? betPanelEnum.get('racetrack').key : betPanelEnum.get('panel').key;
         dispatch(setMobileBetType(newType));
@@ -36,7 +48,7 @@ const PortraitContentMenu = () => {
             <div className="PortraitContentMenu__Section second">
                 {isMobileBetChipOpen && <ButtonWithIcon icon='undo' onClick={() => doUndoBet()}/>}
                 <ChipsSwitcher />
-                {isMobileBetChipOpen && <ButtonWithIcon icon="double" />}
+                {isMobileBetChipOpen && <ButtonWithIcon icon="double" onClick={doDoublingBets} />}
             </div>
             <div className="PortraitContentMenu__Section third">
                 <ButtonWithIcon icon="auto" />

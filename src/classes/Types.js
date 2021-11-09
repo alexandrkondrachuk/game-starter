@@ -224,13 +224,13 @@ export default class Types {
             index: 0, type: 'chat', label: 'Chat', icon: 'chat', width: '100%', enabled: true,
         },
         {
-            index: 1, type: 'limits', label: 'Limits', icon: 'limits', width: '90%', enabled: false,
+            index: 1, type: 'limits', label: 'Limits', icon: 'limits', width: '90%', enabled: true,
         },
         {
             index: 2, type: 'history', label: 'History', icon: 'history', width: '90%', enabled: false,
         },
         {
-            index: 3, type: 'settings', label: 'Settings', icon: 'settings', width: '90%', enabled: false,
+            index: 3, type: 'settings', label: 'Settings', icon: 'settings', width: '90%', enabled: true,
         },
         {
             index: 4, type: 'help', label: 'Help', icon: 'help', width: '90%', enabled: false,

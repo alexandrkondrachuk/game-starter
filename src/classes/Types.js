@@ -120,11 +120,12 @@ export default class Types {
     };
 
     static API__BET__TYPE__NAME = {
-        1: 'Player',
-        2: 'Banker',
-        3: 'Tie',
-        4: 'Player Pair',
-        5: 'Banker Pair',
+        'NMBR': 'STRAIGHT UP',
+        'SPLT': 'SPLIT',
+        'STRT': 'STREET',
+        'CRNR': 'CORNER',
+        'SXLN': 'SIX LINE',
+        'FirstDozen': '1st DOZEN'
     };
 
     static API__BET__TYPE__CLASS = {
@@ -227,7 +228,7 @@ export default class Types {
             index: 1, type: 'limits', label: 'Limits', icon: 'limits', width: '90%', enabled: true,
         },
         {
-            index: 2, type: 'history', label: 'History', icon: 'history', width: '90%', enabled: false,
+            index: 2, type: 'history', label: 'History', icon: 'history', width: '90%', enabled: true,
         },
         {
             index: 3, type: 'settings', label: 'Settings', icon: 'settings', width: '90%', enabled: true,

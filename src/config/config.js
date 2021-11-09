@@ -26,6 +26,9 @@ const config = {
         maintenance: '/maintenance',
         inaction: '/inaction',
     },
+    apiDataPoints: {
+        history: '/api/Bets/GetBetsFromPlayerId',
+    },
     webrtcSettings: {
         "source": {
             "entries": [

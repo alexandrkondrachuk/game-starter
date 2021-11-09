@@ -1,21 +1,19 @@
 import React from 'react';
 import * as _ from 'lodash';
 import * as axios from 'axios';
-import * as PropTypes from 'prop-types';
-import { connect } from 'react-redux';
 import { Scrollbars } from 'react-custom-scrollbars';
 import {
     useWindowHeight,
 } from '@react-hook/window-size';
+import { useSelector } from 'react-redux';
 import getSymbolFromCurrency from 'currency-symbol-map';
-import HistoryModel from '../../../../../../../models/history-model';
-import config from '../../../../../../../config';
-import { Icon } from '../../../../../../../components/svg-components';
-import PlayerInfoModel from '../../../../../../../models/player-info-model';
+import { Icon } from '../../../../../../components/svg-components';
+import HistoryModel from '../../../../../../models/history-model/history-model';
+import config from 'react-global-configuration';
 
 import './history.scss';
 
-function History({ playerId, cid, playerInfo }) {
+const History = () => {
     const [history, setHistory] = React.useState(null);
     const [headerHeight, setHeaderHeight] = React.useState(0);
     const [tableHeaderHeight, setTableHeaderHeight] = React.useState(0);
@@ -25,8 +23,11 @@ function History({ playerId, cid, playerInfo }) {
     const NOT__FOUND__STATUS = 404;
     const onlyHeight = useWindowHeight();
     const historyHeight = onlyHeight - headerHeight - tableHeaderHeight;
-    const currency = _.get(playerInfo, 'currency', config.get('currency'));
+
+    const currency = useSelector((state) => (_.get(state, 'game.player.currency')));
     const currencySymbol = getSymbolFromCurrency(currency);
+    const cid = useSelector((state) => (_.get(state, 'game.player.cid')));
+    const playerId = useSelector((state) => (_.get(state, 'game.player.playerId')));
 
     const getHistory = async () => {
         const host = config.get('server.host');
@@ -118,32 +119,4 @@ function History({ playerId, cid, playerInfo }) {
     );
 }
 
-History.defaultProps = {
-    // queryComputed: null,
-};
-
-History.propTypes = {
-    // eslint-disable-next-line react/forbid-prop-types
-    // queryComputed: PropTypes.object,
-    playerId: PropTypes.string.isRequired,
-    cid: PropTypes.string.isRequired,
-    playerInfo: PropTypes.instanceOf(PlayerInfoModel).isRequired,
-};
-
-const mapStateToProps = (state) => {
-    const queryComputed = _.get(state, 'game.queryComputed', null);
-    const playerId = _.get(state, 'game.playerInfo.playerId');
-    const cid = _.get(state, 'game.playerInfo.cid');
-    const playerInfo = _.get(state, 'game.playerInfo');
-
-    return {
-        queryComputed,
-        playerId,
-        cid,
-        playerInfo,
-    };
-};
-
-const dispatchStateToProps = (dispatch) => ({ dispatch });
-
-export default connect(mapStateToProps, dispatchStateToProps)(History);
+export default History;

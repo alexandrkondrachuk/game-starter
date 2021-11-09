@@ -883,7 +883,7 @@ function PortraitBetPanel() {
                         data-bet-spot-id={target.key}
                         cx={target.coordinates.mobile[0]}
                         cy={target.coordinates.mobile[1]}
-                        r={10}
+                        r={15}
                         fill="blue"
                         fillOpacity={0}
                         onClick={() => doBet(target.key)}

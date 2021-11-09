@@ -56,9 +56,7 @@ const History = () => {
     };
 
     React.useEffect(() => {
-        getHistory()
-            .then((res) => { console.log('History res', res); })
-            .catch((err) => { console.error('History res error', err); });
+        getHistory();
     });
 
     React.useEffect(() => {

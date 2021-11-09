@@ -125,7 +125,18 @@ export default class Types {
         'STRT': 'STREET',
         'CRNR': 'CORNER',
         'SXLN': 'SIX LINE',
-        'FirstDozen': '1st DOZEN'
+        'FirstDozen': '1st DOZEN',
+        'SecondDozen': '2nd DOZEN',
+        'ThirdDozen': '3rd DOZEN',
+        'FirstColumn': '1st COLUMN',
+        'SecondColumn': '2nd COLUMN',
+        'ThirdColumn': '3rd COLUMN',
+        'Red': 'RED',
+        'Black': 'BLACK',
+        'Low': '1-18',
+        'High': '19-36',
+        'Odd': 'ODD',
+        'Even': 'EVEN',
     };
 
     static API__BET__TYPE__CLASS = {

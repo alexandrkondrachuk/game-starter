@@ -6,10 +6,15 @@ import { Icon } from '../../../../components/svg-components';
 import Types from '../../../../classes/Types';
 import { MenuRenderer } from './components';
 import config from '../../../../config';
+import { useSelector, useDispatch } from 'react-redux';
 
 import './menu.scss';
+import { setMenuItemToOpen, setMenuOpen } from '../../../../store/slices/game/gameSlice';
 
 export default function MobileMenu(props) {
+    const menuItemToOpen = useSelector((state) => (_.get(state, 'game.menuItemToOpen')));
+
+    const dispatch = useDispatch();
     const menuDefaultWidth = '80%';
     const animationDuration = 1000;
     const [itemType, setItemType] = React.useState(null);
@@ -22,8 +27,16 @@ export default function MobileMenu(props) {
     };
     const onChange = (state) => {
         const { isOpen } = state;
-        if (!isOpen) _.delay(() => setItemType(null), 400, 500);
+        if (!isOpen) {
+            dispatch(setMenuItemToOpen(''));
+            _.delay(() => setItemType(null), 400, 500);     
+        }
     };
+
+    React.useEffect(() => {
+        if (menuItemToOpen === 'chat') setItemType(menuItemToOpen);
+    });
+
     return (
         <Menu {...props} right width={menuWidth} overlayClassName="MobileMenu" onStateChange={onChange}>
             { !itemType && items.map((item) => (

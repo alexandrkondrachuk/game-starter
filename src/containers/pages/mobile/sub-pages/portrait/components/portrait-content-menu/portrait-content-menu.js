@@ -6,7 +6,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import * as _ from 'lodash';
 import Api from '../../../../../../../classes/Api';
 import { roundStageEnum, betPanelEnum } from '../../../../../../../enums';
-import { setBetPanelDown, setMobileBetType } from '../../../../../../../store/slices/game/gameSlice';
+import { setMenuItemToOpen, setMobileBetType } from '../../../../../../../store/slices/game/gameSlice';
 
 const PortraitContentMenu = () => {
     const dispatch = useDispatch();
@@ -39,18 +39,8 @@ const PortraitContentMenu = () => {
         dispatch(setMobileBetType(newType));
     }
 
-    const downBetPanel = () => {
-        const isDown = !!!isBetPanelDown;
-        dispatch(setBetPanelDown(isDown));
-    }
-
-    const switchToggleButton = () => {
-        if (isBetPanelDown === true) {
-            return 'toggleReverse';
-        }
-        else {
-            return 'toggle';
-        }
+    const toggleChat = () => {
+        dispatch(setMenuItemToOpen('chat'));  
     }
 
     return (
@@ -58,7 +48,7 @@ const PortraitContentMenu = () => {
             <div className="PortraitContentMenu__Section first">
                 <ButtonWithIcon borderEnable={false}/>
                 <ButtonWithIcon icon="statistic" borderEnable={false} />
-                <ButtonWithIcon icon={switchToggleButton()} isActive={isBetPanelDown} onClick={downBetPanel} borderEnable={false} />
+                <ButtonWithIcon icon="chat" borderEnable={false} onClick={toggleChat} />              
             </div>
             <div className="PortraitContentMenu__Section second">
                 {isMobileBetChipOpen && <ButtonWithIcon icon='undo' onClick={() => doUndoBet()}/>}

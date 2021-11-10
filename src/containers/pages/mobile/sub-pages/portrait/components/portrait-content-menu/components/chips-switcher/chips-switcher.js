@@ -17,12 +17,19 @@ const ChipsSwitcher = () => {
     const toggleChip = () => dispatch(toggleMobileChip());
     useOnClickOutside(zoneRef, toggleChip);
 
+    const onSelectChipClick = (chip) => {
+        dispatch(setActiveChip(chip?.nominal))
+        _.delay(() => {
+            toggleChip();
+        }, 100);
+    }
+
     return (
         <button className="ChipsSwitcher">
             {isMobileBetChipOpen  && <Chip onClick={toggleChip} {...activeChip} />}
             {!isMobileBetChipOpen  && <div ref={zoneRef} className="ChipsSwitcher__Zone">
                 {chips.map((chip, key) => (
-                    <Chip key={chip.id} onClick={() => dispatch(setActiveChip(chip?.nominal))} {...chip} className={cn('chip-selector', { [`index-${key}`]: true })}/>))}
+                    <Chip key={chip.id} onClick={() => onSelectChipClick(chip)} {...chip} className={cn('chip-selector', { [`index-${key}`]: true })}/>))}
                 <div className="zone-active-chip">
                     <Chip onClick={toggleChip} {...activeChip} />
                 </div>

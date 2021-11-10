@@ -59,7 +59,7 @@ const Portrait = () => {
                     <PortraitBetSwitcher type={mobileBetPanelType} />
                 </div>
                 <div className="Content__DownButton">
-                    <ButtonWithIcon icon={switchToggleButton()} isActive={isBetPanelDown} onClick={downBetPanel} borderEnable={false} />
+                    {isOpen && <ButtonWithIcon icon={switchToggleButton()} isActive={isBetPanelDown} onClick={downBetPanel} borderEnable={false} />}
                 </div>
                 <div className="Content__Menu">
                     <PortraitContentMenu />

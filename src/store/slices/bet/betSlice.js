@@ -15,7 +15,7 @@ const betSlice = createSlice({
             new ChipModel({ id: 5, nominal: 10000, color: 'purple', active: false }),
         ],
         isMobileBetChipOpen: true,
-        neighboursAmount: 1,
+        neighboursAmount: 2,
         neighboursLimit: [1, 9],
     },
     reducers: {

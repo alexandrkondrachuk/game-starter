@@ -51,9 +51,9 @@ const PortraitContentMenu = () => {
                 <ButtonWithIcon icon="chat" borderEnable={false} onClick={toggleChat} />              
             </div>
             <div className="PortraitContentMenu__Section second">
-                {isMobileBetChipOpen && <ButtonWithIcon icon='undo' onClick={() => doUndoBet()}/>}
-                <ChipsSwitcher />
-                {isMobileBetChipOpen && <ButtonWithIcon icon="double" onClick={doDoublingBets} />}
+                {isOpen && <ButtonWithIcon icon='undo' onClick={() => doUndoBet()}/>}
+                {isOpen && <ChipsSwitcher />}
+                {isOpen && <ButtonWithIcon icon="double" onClick={doDoublingBets} />}
             </div>
             <div className="PortraitContentMenu__Section third">
                 <ButtonWithIcon icon="auto" />

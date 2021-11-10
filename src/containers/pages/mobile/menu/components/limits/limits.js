@@ -49,7 +49,7 @@ const Limits = () => {
                             {currencySymbol}
                             {minBet}
                             { '-' }
-                            {nmbrLimit}
+                            {redLimit}
                         </span>
                     </div>
                 </div>

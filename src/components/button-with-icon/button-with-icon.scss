@@ -1,3 +1,15 @@
+@keyframes pulse-color-red {
+    0% {
+      background-color: rgba(187, 54, 45, 0.35);
+    }
+    50% {
+      background-color: rgba(187, 54, 45, 0.75);
+    }
+    100% {
+      background-color: rgba(187, 54, 45, 0.35);
+    }
+  }
+
 .ButtonWithIcon {
     position: relative;
     width: 45px;
@@ -23,6 +35,14 @@
             transform: translate3d(6px, 14px, 0);
         }
     }
+
+    &.pulse {
+        border-color: rgba(187, 54, 45, 0.75);
+        background-color: rgba(187, 54, 45, 0.35);
+        animation-name: pulse-color-red;
+        animation-duration: 1.8s;
+        animation-iteration-count: infinite;
+      }
 
     &.toggleReverse {
         .icon-wrapper {

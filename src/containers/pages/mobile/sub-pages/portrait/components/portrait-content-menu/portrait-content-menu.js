@@ -15,6 +15,8 @@ const PortraitContentMenu = () => {
     const isBetPanelDown = useSelector((state) => (_.get(state, 'game.isBetPanelDown')));
     const roundStage = useSelector((state) => (_.get(state, 'game.roundState.stage')));
     const isOpen = roundStageEnum?.get(roundStage)?.value === roundStageEnum?.get(2)?.value;
+    const isAnyBetDone = useSelector((state) => (_.get(state, 'game.player.isAnyBetDone')));
+    const totalBet = useSelector((state) => (_.get(state, 'game.player.totalBetOfCurrentRound')));
 
     const doUndoBet = () => {
         if (Api.instance && isOpen) {
@@ -53,7 +55,8 @@ const PortraitContentMenu = () => {
             <div className="PortraitContentMenu__Section second">
                 {isOpen && <ButtonWithIcon icon='undo' onClick={() => doUndoBet()}/>}
                 {isOpen && <ChipsSwitcher />}
-                {isOpen && <ButtonWithIcon icon="double" onClick={doDoublingBets} />}
+                {isOpen && isAnyBetDone && totalBet === 0 && <ButtonWithIcon icon="repeat" onClick={doRepeatBets} isPulse={true}/>}
+                {((isOpen && totalBet > 0) || (isOpen && !!!isAnyBetDone && totalBet === 0)) && <ButtonWithIcon icon="double" onClick={doDoublingBets} isPulse={totalBet > 0}/>}
             </div>
             <div className="PortraitContentMenu__Section third">
                 <ButtonWithIcon icon="auto" />

@@ -33,6 +33,7 @@ export default class PlayerModel extends BaseModel {
         this.totalWinOfCurrentRound = 0;
         this.userAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36";
         this.userAgentSR = '';
+        this.IsAnyBetDone = false;
         this.copyFrom(initData);
     }
 }

@@ -118,7 +118,7 @@ const Limits = () => {
                                 { '-' }
                                 {dozenLimit}
                             </div>
-                            <div className="Td right">5:1</div>
+                            <div className="Td right">2:1</div>
                         </div>
                         <div className="Tr">
                             <div className="Td left">RED/BLACK</div>
@@ -128,7 +128,7 @@ const Limits = () => {
                                 { '-' }
                                 {redLimit}
                             </div>
-                            <div className="Td right">5:1</div>
+                            <div className="Td right">1:1</div>
                         </div>
                         <div className="Tr">
                             <div className="Td left">EVEN/ODD</div>
@@ -138,7 +138,7 @@ const Limits = () => {
                                 { '-' }
                                 {oddLimit}
                             </div>
-                            <div className="Td right">5:1</div>
+                            <div className="Td right">1:1</div>
                         </div>
                         <div className="Tr">
                             <div className="Td left">1-18/19-36</div>
@@ -148,7 +148,7 @@ const Limits = () => {
                                 { '-' }
                                 {lowLimit}
                             </div>
-                            <div className="Td right">5:1</div>
+                            <div className="Td right">1:1</div>
                         </div>
                     </div>
                 </div>

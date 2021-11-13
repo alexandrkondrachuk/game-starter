@@ -12,6 +12,10 @@ import './menu.scss';
 import { setMenuItemToOpen, setMenuOpen } from '../../../../store/slices/game/gameSlice';
 
 export default function MobileMenu(props) {
+    const userAgent = window.navigator.userAgent;
+    const isStartFromApp = /Native/.test(userAgent);
+    const isFromIphone = /iPhone/.test(userAgent);
+    if (!!!isStartFromApp && isFromIphone) document.documentElement.style.setProperty("--button-bottom", "5vh");
     const menuItemToOpen = useSelector((state) => (_.get(state, 'game.menuItemToOpen')));
 
     const dispatch = useDispatch();

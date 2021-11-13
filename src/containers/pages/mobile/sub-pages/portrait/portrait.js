@@ -27,6 +27,10 @@ const Portrait = () => {
     const isBetPanelDown = useSelector((state) => (_.get(state, 'game.isBetPanelDown')));
     const menuItemToOpen = useSelector((state) => (_.get(state, 'game.menuItemToOpen')));
 
+    const userAgent = window.navigator.userAgent;
+    const isStartFromApp = /Native/.test(userAgent);
+    const isFromIphone = /iPhone/.test(userAgent);
+
     const downBetPanel = () => {
         const isDown = !!!isBetPanelDown;
         dispatch(setBetPanelDown(isDown));
@@ -67,7 +71,13 @@ const Portrait = () => {
             </div>
             <div className="Portrait__Footer">
                 <PortraitFooter />
-            </div>
+            </div>           
+            {
+                !!!isStartFromApp && isFromIphone &&
+                <div className="Portrait__IosPlug">
+
+                </div>
+            }
         </div>
     );
 };

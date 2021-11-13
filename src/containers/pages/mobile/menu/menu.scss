@@ -3,6 +3,10 @@
 @import "~bootstrap/scss/mixins/breakpoints";
 @import "../../../../assets/scss/utilities/functions";
 
+:root {
+  --button-bottom: 0vh;
+}
+
 #Portrait, #Landscape {
   .MobileMenu {
     max-height: calc(100vh - 1px) !important;
@@ -27,7 +31,7 @@
     width: 42px;
     height: 42px;
     right: 1.75%;
-    bottom: 50px;
+    bottom: calc(var(--button-bottom) + 50px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,7 +62,7 @@
     height: 42px !important;
     width: 42px !important;
     right: 1.75% !important;
-    top: calc(100% - 88px) !important;
+    top: calc(100% - 88px - var(--button-bottom)) !important;
     display: flex;
     justify-content: center;
     align-items: center;

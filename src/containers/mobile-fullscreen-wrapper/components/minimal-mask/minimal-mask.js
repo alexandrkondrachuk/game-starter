@@ -21,7 +21,7 @@ const MinimalMask = () => {
                 <ScrollIcon />
             </div>
             <div className="minimal-ui-mask-title">
-                Tap and swipe Up to play
+                Swipe Up to play
             </div>
         </div>
     );

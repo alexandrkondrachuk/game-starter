@@ -9,9 +9,11 @@ const Mask = (props) => {
         <div
             className="Mask"
         >
-            {props.fullscreenType === 'native' && <NativeMask/>}
-            {props.fullscreenType === 'minimal-ui' && <MinimalMask />}
-            {(props.fullscreenType !== 'native' && props.fullscreenType !== 'minimal-ui') && <NativeMask/>}
+            {props.fullscreenType === "native"
+                ? (<NativeMask/>)
+                : props.fullscreenType === "minimal-ui"
+                    ? (<MinimalMask />)
+                    : "Mask won't be rendered"}
         </div>
     );
 };

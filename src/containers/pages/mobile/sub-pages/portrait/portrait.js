@@ -18,6 +18,7 @@ import { Icon } from '../../../../../components/svg-components';
 import Fab from '@material-ui/core/Fab';
 import { setBetPanelDown } from '../../../../../store/slices/game/gameSlice';
 import ButtonWithIcon from '../../../../../components/button-with-icon';
+import appSlice from '../../../../../store/slices/app';
 
 const Portrait = () => {
     const dispatch = useDispatch();
@@ -30,6 +31,9 @@ const Portrait = () => {
     const userAgent = window.navigator.userAgent;
     const isStartFromApp = /Native/.test(userAgent);
     const isFromIphone = /iPhone/.test(userAgent);
+
+    if (!!!isStartFromApp && isFromIphone)
+        dispatch(appSlice.setVoice(false));
 
     const downBetPanel = () => {
         const isDown = !!!isBetPanelDown;

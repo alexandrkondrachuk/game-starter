@@ -19,6 +19,7 @@ const gameSlice = createSlice({
         mobileBetPanelType: betPanelEnum.get('panel').key,
         isBetPanelDown: false,
         menuItemToOpen: null,
+        winners: null,
     },
     reducers: {
         setReadyState(state, action) {
@@ -67,6 +68,9 @@ const gameSlice = createSlice({
         setMenuItemToOpen(state, action) {
             state.menuItemToOpen = action.payload;
         },
+        setWinners(state, action) {
+            state.winners = action.payload;
+        }
     },
 });
 
@@ -86,5 +90,6 @@ export const {
     setMobileBetType,
     setBetPanelDown,
     setMenuItemToOpen,
+    setWinners,
 } = gameSlice.actions;
 export const { name } = gameSlice;

@@ -13,6 +13,7 @@ import {
     setRouletteStat,
     setLimits,
     setWin,
+    setWinners,
 } from '../store/slices/game/gameSlice';
 import {
     addItemToPlacedBetsList,
@@ -103,6 +104,8 @@ export default class Api {
     onRouletteStat = (data) => store.dispatch(setRouletteStat(data));
 
     onLimits = (data) => store.dispatch(setLimits(data));
+
+    onWinners = (data) => store.dispatch(setWinners(data))
 
     // Information Routes
 

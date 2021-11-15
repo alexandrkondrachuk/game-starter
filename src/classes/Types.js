@@ -87,6 +87,7 @@ export default class Types {
         { id: 14, name: 'Connected', method: 'onConnected' },
         { id: 15, name: 'RouletteStat', method: 'onRouletteStat' },
         { id: 16, name: 'Limits', method: 'onLimits' },
+        { id: 17, name: 'Winners', method: 'onWinners' },
     ];
 
     // Api Round Stage

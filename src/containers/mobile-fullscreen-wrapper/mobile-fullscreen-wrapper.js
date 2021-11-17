@@ -44,7 +44,7 @@ const MobileFullscreenWrapper = ({ children }) => {
 
 
         <>
-        {!isStartFromApp ? (
+        {(!isStartFromApp && window === window.top) ? (
             <MobileFullscreen mask={Mask}>
                 <div className="MobileFullscreen">
                     {children}

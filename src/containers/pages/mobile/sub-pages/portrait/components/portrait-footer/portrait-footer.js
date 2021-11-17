@@ -14,7 +14,6 @@ const PortraitFooter = () => {
     const currencySymbol = getSymbolFromCurrency(currency);
     const roundId = useSelector((state) => (_.get(state, 'game.roundState.id')))
     const winners = useSelector((state) => (_.get(state, 'game.winners')))
-    const winnersList = winners?.map(winner => <span className="winner">{winner}</span>)
 
     return (
         <div className="PortraitFooter">

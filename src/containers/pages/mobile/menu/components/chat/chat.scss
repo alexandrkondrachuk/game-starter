@@ -23,6 +23,26 @@
     background-color: var(--gray);
   }
 
+  &__Dealer__Name {
+    padding: 4px 8px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .dealer {
+    font-weight: bold;
+    font-size: 12px;
+    color: var(--white);
+  }
+
+  .name {
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--green);
+  }
+
   .Header {
     &__Icon {
       padding-right: 8px;

@@ -9,6 +9,7 @@ import {
 import { Icon } from '../../../../../../components/svg-components';
 import Message from './message';
 import Api from '../../../../../../classes/Api';
+import { useSelector } from 'react-redux';
 
 import './chat.scss';
 
@@ -22,6 +23,7 @@ function Chat({ messages: chatMessages }) {
     const footerRef = React.useRef(null);
     const onlyHeight = useWindowHeight();
     const bodyHeight = onlyHeight - headerHeight - footerHeight;
+    const dealerName = useSelector((state) => (_.get(state, 'game.roundState.dealerName')))
 
     React.useEffect(() => {
         if (headerRef && headerRef.current) setHeaderHeight(headerRef.current.clientHeight);
@@ -52,6 +54,15 @@ function Chat({ messages: chatMessages }) {
             <div ref={headerRef} className="Chat__Mobile__Header">
                 <div className="Header__Icon"><Icon path="chat" /></div>
                 <div className="Header__Text">Chat</div>
+            </div>
+            <div className="Chat__Mobile__Dealer__Name">
+                <span className="dealer">
+                    {'Dealer'}
+                </span>
+                &nbsp;
+                <span className="name">
+                    {dealerName}
+                </span>
             </div>
             <div ref={footerRef} className="Chat__Mobile__Footer">
                 <input

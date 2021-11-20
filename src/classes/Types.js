@@ -246,7 +246,10 @@ export default class Types {
             index: 3, type: 'settings', label: 'Settings', icon: 'settings', width: '90%', enabled: true,
         },
         {
-            index: 4, type: 'help', label: 'Help', icon: 'help', width: '90%', enabled: false,
+            index: 4, type: 'setnickname', label: 'Change name', icon: 'sticky', width: '90%', enabled: true,
+        },
+        {
+            index: 5, type: 'help', label: 'Help', icon: 'help', width: '90%', enabled: false,
         },
     ];
 

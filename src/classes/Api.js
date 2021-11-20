@@ -134,6 +134,10 @@ export default class Api {
         return this.connection.invoke('ChatUserMessage', message);
     }
 
+    doSetNickName(nickname = '') {
+        return this.connection.invoke('SetPlayerNickname', nickname);
+    }
+
     doDoublingBets() {
         return this.connection.invoke('DoublingBets');
     }

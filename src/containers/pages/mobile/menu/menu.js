@@ -28,6 +28,7 @@ export default function MobileMenu(props) {
     const onClick = (e, type = null) => {
         e.preventDefault();
         setItemType(type);
+        dispatch(setMenuItemToOpen(type));
     };
     const onChange = (state) => {
         const { isOpen } = state;

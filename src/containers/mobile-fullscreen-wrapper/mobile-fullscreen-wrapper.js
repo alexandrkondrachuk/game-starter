@@ -2,13 +2,15 @@ import React, { useState } from 'react';
 import { MobileFullscreen } from 'react-mobile-fullscreen';
 import Mask from './components/mask';
 import './mobile-fullscreen.scss';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import * as _ from 'lodash';
 import config from '../../config/config';
-import ClickIcon from './components/icons/click-icon'
+import ClickIcon from './components/icons/click-icon';
+import appSlice from '../../store/slices/app';
 
 const MobileFullscreenWrapper = ({ children }) => {
 
+    const dispatch = useDispatch();
     const [showAppMask, setAppMaskStatus] = useState(true);
     const ua = window.navigator.userAgent;
     const isStartFromApp = /Parimatch/.test(ua);
@@ -21,6 +23,9 @@ const MobileFullscreenWrapper = ({ children }) => {
             playerInstance.setVolume(1);
         }
     };
+
+    if (isStartFromApp || window != window.top)
+        dispatch(appSlice.setVoice(false));
 
     const appMask = (
         // eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-static-element-interactions
@@ -53,7 +58,6 @@ const MobileFullscreenWrapper = ({ children }) => {
         ) : (
                 <div className="MobileFullscreen">
                     {children}
-                    {showAppMask && appMask}
                 </div>
         )}
         </>

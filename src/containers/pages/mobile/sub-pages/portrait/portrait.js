@@ -27,6 +27,8 @@ const Portrait = () => {
     const isOpen = roundStageEnum?.get(roundStage)?.value === roundStageEnum?.get(2)?.value;
     const isBetPanelDown = useSelector((state) => (_.get(state, 'game.isBetPanelDown')));
     const menuItemToOpen = useSelector((state) => (_.get(state, 'game.menuItemToOpen')));
+    const playerInstance = useSelector((state) => (_.get(state, 'stream.playerInstance', null)));
+    const voice = useSelector((state) => (_.get(state, 'app.voice', null)));
 
     const userAgent = window.navigator.userAgent;
     const isStartFromApp = /Native/.test(userAgent);
@@ -49,8 +51,16 @@ const Portrait = () => {
         }
     }
 
+    const enableSound = () => {
+        if (!!!voice && playerInstance) {
+            playerInstance.unmute();
+            dispatch(appSlice.setVoice(true));
+            //playerInstance.setVolume(1);
+        }
+    };
+
     return (
-        <div className="Portrait" id="Portrait">
+        <div className="Portrait" id="Portrait" onClick={enableSound}>
             <MobileMenu pageWrapId="Portrait" outerContainerId="Mobile" isOpen={!!menuItemToOpen} />
             <div className="Portrait__StatusBar">
                 <PortraitStatusBar />

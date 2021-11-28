@@ -21,6 +21,12 @@ function PortraitBetPanel() {
     const luckyNumber = useSelector((state) => (_.get(state, 'game.roundState.winNumber.luckyNumber', '')));
     const isResult = roundStageEnum?.get(roundStage)?.value === roundStageEnum?.get(4)?.value;
 
+    const partnerCid = useSelector((state) => (_.get(state, 'game.player.cid')));
+    let isPartnerLogo = false;
+    if (partnerCid === "plug") {
+        isPartnerLogo = true;
+    }
+
     const getChipCoordinates = (key) => {
         const target = targets.find((target) => (target.key === key));
         return _.get(target, 'coordinates.mobile', [0, 0]);
@@ -57,17 +63,29 @@ function PortraitBetPanel() {
         const activeTarget = targets.find((target) => (target.key === `NMBR.${luckyNumber}`));
         const coordinates = _.get(activeTarget, 'coordinates.mobile', [0,0]);
         const pointer = config.get('pointer');
-        const pointerCoordinates = [(coordinates[0] - pointer.width / 2), (coordinates[1] - pointer.height / 2)];
-
-        return (
-            <g className="pointer" transform={`translate(${pointerCoordinates[0]}, ${pointerCoordinates[1]})`} fill={pointer.fill}>
-                <rect width="14" height="14" x="25" y="2" rx="2" ry="2"/>
-                <rect width="14" height="14" x="25" y="48" rx="2" ry="2"/>
-                <rect width="14" height="14" x="2" y="25" rx="2" ry="2"/>
-                <rect width="14" height="14" x="48" y="25" rx="2" ry="2"/>
-                <path d="M55.86 41h-4.33A21.49 21.49 0 0141 51.53v4.33A25.46 25.46 0 0055.86 41zM23 12.47V8.14A25.46 25.46 0 008.14 23h4.33A21.49 21.49 0 0123 12.47zM23 55.86v-4.33A21.49 21.49 0 0112.47 41H8.14A25.46 25.46 0 0023 55.86zM51.53 23h4.33A25.46 25.46 0 0041 8.14v4.33A21.49 21.49 0 0151.53 23z"/>
-            </g>
-        );
+        if (isPartnerLogo) {
+            const pointerCoordinates = [(coordinates[0] - pointer.width / 2), (coordinates[1] - pointer.height / 2 + 14)];
+            return (
+                <svg className="partnerPointer" x={pointerCoordinates[0]} y={pointerCoordinates[1]} width="55" height="35" viewBox="0 0 201 127" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M95.4281 0H16.8834L0 59.0587H78.578L95.4281 0Z" fill="#F8FF13"/>
+                    <path d="M121.921 67.2705H43.3766L26.4932 126.329H105.038L121.921 67.2705Z" fill="#F8FF13" />
+                    <path d="M137.67 0H123.089H120.386H111.778H105.371H104.237L87.3535 59.0587H103.503H106.206L110.71 43.2763H131.597C142.575 43.2763 149.315 38.3047 152.351 27.6608L154.053 21.855C157.924 8.34162 151.584 0 137.67 0ZM134.2 28.0278H115.048L118.685 15.2818H137.737L134.2 28.0278Z" fill="#F8FF13"/>
+                    <path d="M200.8 67.2305H177.577L157.357 90.8539L149.082 67.2305H130.897L113.813 126.322H131.731L141.174 93.6233L147.447 111.875H158.958L175.642 92.5222L165.798 126.322H165.899H183.483L200.566 67.2305H200.8Z" fill="#F8FF13"/>
+                </svg>
+            );
+        }
+        else {
+            const pointerCoordinates = [(coordinates[0] - pointer.width / 2), (coordinates[1] - pointer.height / 2)];
+            return (
+                <g className="pointer" transform={`translate(${pointerCoordinates[0]}, ${pointerCoordinates[1]})`} fill={pointer.fill}>
+                    <rect width="14" height="14" x="25" y="2" rx="2" ry="2"/>
+                    <rect width="14" height="14" x="25" y="48" rx="2" ry="2"/>
+                    <rect width="14" height="14" x="2" y="25" rx="2" ry="2"/>
+                    <rect width="14" height="14" x="48" y="25" rx="2" ry="2"/>
+                    <path d="M55.86 41h-4.33A21.49 21.49 0 0141 51.53v4.33A25.46 25.46 0 0055.86 41zM23 12.47V8.14A25.46 25.46 0 008.14 23h4.33A21.49 21.49 0 0123 12.47zM23 55.86v-4.33A21.49 21.49 0 0112.47 41H8.14A25.46 25.46 0 0023 55.86zM51.53 23h4.33A25.46 25.46 0 0041 8.14v4.33A21.49 21.49 0 0151.53 23z"/>
+                </g>
+            );
+        }
     };
 
     const doBet = (Code) => {

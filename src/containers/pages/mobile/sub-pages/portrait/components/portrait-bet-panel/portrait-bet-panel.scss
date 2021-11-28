@@ -1,3 +1,15 @@
+@keyframes pulse-partner-pointer {
+  0% {
+    fill-opacity: 0.5;
+  }
+  50% {
+    fill-opacity: 1;
+  }
+  100% {
+    fill-opacity: 0.5;
+  }
+}
+
 @keyframes pulse-pointer {
   0% {
     fill: var(--primary);
@@ -141,6 +153,12 @@
 
   .Chip {
     pointer-events: none;
+  }
+
+  .partnerPointer {
+    animation-name: pulse-partner-pointer;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
   }
 
   .pointer {

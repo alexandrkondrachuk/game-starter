@@ -8,13 +8,6 @@ const MinimalMask = () => {
 
     const playerInstance = useSelector((state) => (_.get(state, 'stream.playerInstance', null)));
 
-    const enableSound = () => {
-        if (playerInstance) {
-            playerInstance.unmute();
-            //playerInstance.setVolume(1);
-        }
-    };
-
     return (
         <div className="MinimalMask">
             <div className="minimal-ui-mask-icon">

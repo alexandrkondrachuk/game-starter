@@ -31,6 +31,7 @@ const Portrait = () => {
     const menuItemToOpen = useSelector((state) => (_.get(state, 'game.menuItemToOpen')));
     const playerInstance = useSelector((state) => (_.get(state, 'stream.playerInstance', null)));
     const voice = useSelector((state) => (_.get(state, 'app.voice', null)));
+    const isInitVoice = useSelector((state) => (_.get(state, 'app.isInitVoice', null)));
 
     const partnerCid = useSelector((state) => (_.get(state, 'game.player.cid')));
     let isPartnerLogo = false;
@@ -60,9 +61,10 @@ const Portrait = () => {
     }
 
     const enableSound = () => {
-        if (!!!voice && playerInstance) {
+        if (!!!isInitVoice && !!!voice && playerInstance) {
             playerInstance.unmute();
             dispatch(appSlice.setVoice(true));
+            dispatch(appSlice.setInitVoice(true));
             //playerInstance.setVolume(1);
         }
     };

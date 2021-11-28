@@ -5,6 +5,7 @@ const appSlice = createSlice({
     initialState: {
         query: null,
         voice: true,
+        isInitVoice: false,
     },
     reducers: {
         setQuery(state, action) {
@@ -12,10 +13,13 @@ const appSlice = createSlice({
         },
         setVoice(state, action) {
             state.voice = action.payload;
-        }
+        },
+        setInitVoice(state, action) {
+            state.isInitVoice = action.payload;
+        },
     },
 });
 
 export default appSlice.reducer;
-export const { setQuery, setVoice } = appSlice.actions;
+export const { setQuery, setVoice, setInitVoice } = appSlice.actions;
 export const { name } = appSlice;

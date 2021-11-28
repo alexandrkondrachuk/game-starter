@@ -43,9 +43,6 @@ const Portrait = () => {
     const isStartFromApp = /Native/.test(userAgent);
     const isFromIphone = /iPhone/.test(userAgent);
 
-    if (!!!isStartFromApp && isFromIphone)
-        dispatch(appSlice.setVoice(false));
-
     const downBetPanel = () => {
         const isDown = !!!isBetPanelDown;
         dispatch(setBetPanelDown(isDown));
@@ -61,7 +58,7 @@ const Portrait = () => {
     }
 
     const enableSound = () => {
-        if (!!!isInitVoice && !!!voice && playerInstance) {
+        if (!!!isInitVoice && playerInstance) {
             playerInstance.unmute();
             dispatch(appSlice.setVoice(true));
             dispatch(appSlice.setInitVoice(true));
